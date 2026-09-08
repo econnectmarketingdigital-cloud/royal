@@ -160,13 +160,14 @@ export default function Leads() {
 
       <div style={{ display: 'flex', gap: '15px', marginBottom: '20px', flexWrap: 'wrap' }}>
         <div style={{ flex: '1 1 300px', position: 'relative' }}>
-          <FiSearch style={{ position: 'absolute', left: '10px', top: '10px', color: '#999' }} />
+          <FiSearch style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#94a3b8' }} />
           <input 
             type="text" 
             placeholder="Buscar por nome, telefone ou email..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            style={{ width: '100%', padding: '8px 8px 8px 35px', borderRadius: '4px', border: '1px solid #ddd' }}
+            className="input"
+            style={{ width: '100%', padding: '12px 12px 12px 42px', borderRadius: '8px', border: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)', color: 'var(--color-text)', boxSizing: 'border-box' }}
           />
         </div>
         <select 

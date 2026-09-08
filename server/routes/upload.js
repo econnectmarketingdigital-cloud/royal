@@ -8,15 +8,15 @@ import { createClient } from '@supabase/supabase-js';
 const router = express.Router();
 
 // Supabase Configuration
-const supabaseUrl = 'https://xrsfqktxavdrjoduclma.supabase.co';
-// Usando a service_role key que você forneceu para garantir permissão total no backend
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhyc2Zxa3R4YXZkcmpvZHVjbG1hIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NzUzOTcyNiwiZXhwIjoyMTAzMTE1NzI2fQ.zqbyYv3iPqmX6FpxYTx3J2S7wqZZOJ5jd9Od8B1pdQE';
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
+const supabase = supabaseUrl && supabaseServiceKey ? createClient(supabaseUrl, supabaseServiceKey) : null;
 
 const BUCKET_NAME = 'uploads';
 
 // Garante que o bucket 'uploads' existe (cria automaticamente se não existir)
 async function ensureBucket() {
+  if (!supabase) return;
   try {
     const { data, error } = await supabase.storage.getBucket(BUCKET_NAME);
     if (error && error.message.includes('not found')) {

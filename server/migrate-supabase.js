@@ -8,11 +8,11 @@ const connectionString = `postgresql://postgres:${dbPassword}@db.xrsfqktxavdrjod
 
 async function migrate() {
   const client = new Client({
-    host: 'aws-0-sa-east-1.pooler.supabase.com',
-    port: 6543,
-    database: 'postgres',
-    user: 'postgres.xrsfqktxavdrjoduclma',
-    password: dbPassword,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT || 6543,
+    database: process.env.DB_NAME || 'postgres',
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
     ssl: { rejectUnauthorized: false }
   });
   await client.connect();

@@ -167,7 +167,7 @@ const Perfil = () => {
       {/* 1. SEÇÃO DE FOTO DE PERFIL (AVATAR) */}
       <div className="card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <div style={{ backgroundColor: 'rgba(0, 245, 160, 0.12)', color: '#00F5A0', padding: '0.75rem', borderRadius: '12px', border: '1px solid rgba(0, 245, 160, 0.25)' }}>
+          <div style={{ backgroundColor: 'rgba(196, 150, 83, 0.12)', color: '#c49653', padding: '0.75rem', borderRadius: '12px', border: '1px solid rgba(196, 150, 83, 0.25)' }}>
             <FiUser size={22} />
           </div>
           <div>
@@ -189,13 +189,13 @@ const Perfil = () => {
               borderRadius: '50%',
               overflow: 'hidden',
               background: 'rgba(18, 20, 24, 0.9)',
-              border: '3px solid #00F5A0',
-              boxShadow: '0 0 25px rgba(0, 245, 160, 0.3)',
+              border: '3px solid #c49653',
+              boxShadow: '0 0 25px rgba(196, 150, 83, 0.3)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               fontSize: '2.5rem',
-              color: '#00F5A0',
+              color: '#c49653',
               fontWeight: 800
             }}>
               {user?.avatar_url ? (
@@ -214,7 +214,7 @@ const Perfil = () => {
                 position: 'absolute',
                 bottom: '0',
                 right: '0',
-                background: '#00F5A0',
+                background: '#c49653',
                 color: '#061912',
                 borderRadius: '50%',
                 width: '34px',
@@ -224,7 +224,7 @@ const Perfil = () => {
                 justifyContent: 'center',
                 cursor: uploadingAvatar ? 'wait' : 'pointer',
                 boxShadow: '0 4px 10px rgba(0,0,0,0.5)',
-                border: '2px solid #08090A'
+                border: '2px solid #1e3344'
               }}
               title="Trocar Foto de Perfil"
             >
@@ -243,7 +243,7 @@ const Perfil = () => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <div>
               <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#FFFFFF' }}>{user?.nome}</div>
-              <div style={{ fontSize: '0.9rem', color: '#00F5A0', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>{user?.role}</div>
+              <div style={{ fontSize: '0.9rem', color: '#c49653', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>{user?.role}</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '2px' }}>{user?.email}</div>
             </div>
 
@@ -319,7 +319,7 @@ const Perfil = () => {
                 className="btn btn-primary"
                 onClick={handleSavePosition}
                 disabled={savingPos}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: '#00D68B', borderColor: '#00D68B', color: '#061912', fontWeight: 700 }}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: '#fff4c9', borderColor: '#fff4c9', color: '#061912', fontWeight: 700 }}
               >
                 {savingPos ? <div className="spinner" style={{ width: 16, height: 16, borderTopColor: '#061912' }}></div> : <FiSave />}
                 Salvar Enquadramento
@@ -344,9 +344,9 @@ const Perfil = () => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginTop: '0.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <span style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                <FiMove color="#00F5A0" /> Clique e arraste na foto para reposicionar ou use as barras abaixo:
+                <FiMove color="#c49653" /> Clique e arraste na foto para reposicionar ou use as barras abaixo:
               </span>
-              <span style={{ fontSize: '0.8rem', color: '#00F5A0', background: 'rgba(0, 245, 160, 0.12)', padding: '4px 10px', borderRadius: '8px', fontWeight: 600 }}>
+              <span style={{ fontSize: '0.8rem', color: '#c49653', background: 'rgba(196, 150, 83, 0.12)', padding: '4px 10px', borderRadius: '8px', fontWeight: 600 }}>
                 Posição: X={pos.x}% | Y={pos.y}%
               </span>
             </div>
@@ -358,7 +358,7 @@ const Perfil = () => {
               onMouseUp={handleMouseUp}
               onMouseLeave={handleMouseUp}
               style={{ 
-                border: '2px dashed rgba(0, 245, 160, 0.4)', 
+                border: '2px dashed rgba(196, 150, 83, 0.4)', 
                 borderRadius: '16px', 
                 overflow: 'hidden', 
                 position: 'relative', 
@@ -374,7 +374,7 @@ const Perfil = () => {
               <div style={{ position: 'absolute', top: 12, left: 12, background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(8px)', padding: '6px 12px', borderRadius: '8px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '6px', color: '#fff', border: '1px solid rgba(255,255,255,0.1)' }}>
                 <FiMove /> Arraste para enquadrar
               </div>
-              <div style={{ position: 'absolute', bottom: 12, right: 12, background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(8px)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '6px', color: '#00F5A0', border: '1px solid rgba(0, 245, 160, 0.3)' }}>
+              <div style={{ position: 'absolute', bottom: 12, right: 12, background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(8px)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '6px', color: '#c49653', border: '1px solid rgba(196, 150, 83, 0.3)' }}>
                 <FiCheck /> Pré-visualização Ativa
               </div>
             </div>
@@ -391,7 +391,7 @@ const Perfil = () => {
                   max="100" 
                   value={pos.y} 
                   onChange={handleSliderYChange}
-                  style={{ width: '100%', accentColor: '#00F5A0', cursor: 'pointer' }}
+                  style={{ width: '100%', accentColor: '#c49653', cursor: 'pointer' }}
                 />
               </div>
 
@@ -405,7 +405,7 @@ const Perfil = () => {
                   max="100" 
                   value={pos.x} 
                   onChange={handleSliderXChange}
-                  style={{ width: '100%', accentColor: '#00F5A0', cursor: 'pointer' }}
+                  style={{ width: '100%', accentColor: '#c49653', cursor: 'pointer' }}
                 />
               </div>
             </div>

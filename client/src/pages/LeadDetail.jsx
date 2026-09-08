@@ -196,7 +196,7 @@ export default function LeadDetail() {
             <span className="badge" style={{ fontSize: '0.7rem', padding: '4px 10px', borderRadius: '12px', background: 'rgba(255,255,255,0.08)', color: 'var(--color-text-secondary)' }}>
               {lead.origem}
             </span>
-            <span className="badge" style={{ fontSize: '0.7rem', padding: '4px 10px', borderRadius: '12px', background: lead.etapa === 'perdido' ? 'rgba(244,63,94,0.2)' : 'rgba(0,245,160,0.15)', color: lead.etapa === 'perdido' ? '#F43F5E' : '#00F5A0', border: `1px solid ${lead.etapa === 'perdido' ? 'rgba(244,63,94,0.3)' : 'rgba(0,245,160,0.3)'}` }}>
+            <span className="badge" style={{ fontSize: '0.7rem', padding: '4px 10px', borderRadius: '12px', background: lead.etapa === 'perdido' ? 'rgba(244,63,94,0.2)' : 'rgba(196, 150, 83,0.15)', color: lead.etapa === 'perdido' ? '#F43F5E' : '#c49653', border: `1px solid ${lead.etapa === 'perdido' ? 'rgba(244,63,94,0.3)' : 'rgba(196, 150, 83,0.3)'}` }}>
               {getEtapaLabel(lead.etapa)}
             </span>
           </h1>
@@ -250,7 +250,7 @@ export default function LeadDetail() {
               <button 
                 onClick={() => setShowVendaModal(true)}
                 className="btn"
-                style={{ background: 'linear-gradient(135deg, #00F5A0, #00D68B)', color: '#061912', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}
+                style={{ background: 'linear-gradient(135deg, #c49653, #fff4c9)', color: '#061912', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px' }}
               >
                 💰 Registrar Venda
               </button>
@@ -275,7 +275,7 @@ export default function LeadDetail() {
             const isCompleted = idx <= currentIdx;
             return (
               <div key={etp} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: isCompleted ? 1 : 0.35, minWidth: '100px', cursor: 'pointer' }} onClick={() => handleEtapaChange(etp)}>
-                <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCompleted ? '#00F5A0' : 'rgba(255,255,255,0.1)', color: isCompleted ? '#061912' : '#fff', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px', boxShadow: isCompleted ? '0 0 15px rgba(0,245,160,0.4)' : 'none' }}>
+                <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCompleted ? '#c49653' : 'rgba(255,255,255,0.1)', color: isCompleted ? '#061912' : '#fff', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px', boxShadow: isCompleted ? '0 0 15px rgba(196, 150, 83,0.4)' : 'none' }}>
                   {isCompleted ? <FiCheck size={18} /> : idx + 1}
                 </div>
                 <span style={{ fontSize: '0.85em', textAlign: 'center', fontWeight: isCompleted ? 700 : 400, color: isCompleted ? '#FFFFFF' : 'var(--color-text-secondary)' }}>
@@ -292,13 +292,13 @@ export default function LeadDetail() {
         
         {/* Lead Info */}
         <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-          <h3 className="font-heading" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '8px', color: '#00F5A0' }}>
+          <h3 className="font-heading" style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '8px', color: '#c49653' }}>
             <FiInfo /> Detalhes do Lead
           </h3>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <div>
-              <span style={{ fontSize: '0.8em', color: 'var(--color-text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Loteamento de Interesse</span>
+              <span style={{ fontSize: '0.8em', color: 'var(--color-text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Imóvel de Interesse</span>
               <p style={{ margin: '4px 0 0 0', fontWeight: 600, color: '#FFFFFF' }}>{lead.empreendimento_nome || 'Ainda não definido / Aberto'}</p>
             </div>
             <div>
@@ -321,13 +321,13 @@ export default function LeadDetail() {
         {/* Notes & History */}
         <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div>
-            <h3 className="font-heading" style={{ margin: '0 0 10px 0', display: 'flex', alignItems: 'center', gap: '8px', color: '#00F5A0' }}>
+            <h3 className="font-heading" style={{ margin: '0 0 10px 0', display: 'flex', alignItems: 'center', gap: '8px', color: '#c49653' }}>
               <FiEdit3 /> Nova Nota / Acompanhamento
             </h3>
             <textarea 
               value={notaText} 
               onChange={(e) => setNotaText(e.target.value)}
-              placeholder="Digite o resumo do contato com o cliente (ex: cliente gostou do lote comercial)..."
+              placeholder="Digite o resumo do contato com o cliente (ex: cliente gostou do imóvel comercial)..."
               rows="3"
               className="input"
               style={{ width: '100%', marginBottom: '10px', resize: 'vertical' }}
@@ -357,7 +357,7 @@ export default function LeadDetail() {
               ) : (
                 historico.map((item) => (
                   <div key={item.id} style={{ display: 'flex', gap: '10px', fontSize: '0.9em', padding: '10px', borderRadius: '8px', background: 'rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.05)' }}>
-                    <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#00F5A0', marginTop: '6px', flexShrink: 0 }} />
+                    <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#c49653', marginTop: '6px', flexShrink: 0 }} />
                     <div style={{ flex: 1 }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-text-tertiary)', fontSize: '0.8em', marginBottom: '4px' }}>
                         <span>{item.corretor_nome || 'Sistema'}</span>
@@ -407,7 +407,7 @@ export default function LeadDetail() {
       {showTransferModal && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, backdropFilter: 'blur(6px)' }}>
           <div className="card" style={{ padding: '25px', width: '90%', maxWidth: '440px' }}>
-            <h3 className="font-heading" style={{ margin: '0 0 10px 0', color: '#00F5A0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h3 className="font-heading" style={{ margin: '0 0 10px 0', color: '#c49653', display: 'flex', alignItems: 'center', gap: '8px' }}>
               Transferir Lead
             </h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', lineHeight: '1.5' }}>

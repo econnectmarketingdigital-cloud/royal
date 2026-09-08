@@ -9,8 +9,8 @@ const etapaLabels = {
   proposta: 'Proposta', documentacao: 'Documentação', fechado: 'Fechado', perdido: 'Perdido',
 };
 const etapaColors = {
-  novo: '#38BDF8', contato_feito: '#00F5A0', visita_agendada: '#FBBF24',
-  proposta: '#00F5A0', documentacao: '#818CF8', fechado: '#00F5A0', perdido: '#F43F5E',
+  novo: '#38BDF8', contato_feito: '#c49653', visita_agendada: '#FBBF24',
+  proposta: '#c49653', documentacao: '#818CF8', fechado: '#c49653', perdido: '#F43F5E',
 };
 const fmt = (v) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(v || 0);
 

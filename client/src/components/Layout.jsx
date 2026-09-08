@@ -42,7 +42,7 @@ const Layout = () => {
     { to: '/kanban', icon: <HiViewBoards size={24} />, label: 'Kanban' },
     { to: '/leads', icon: <HiUserGroup size={24} />, label: 'Leads' },
     { to: '/ranking', icon: <FiAward size={24} />, label: 'Ranking' },
-    { to: '/empreendimentos', icon: <HiOfficeBuilding size={24} />, label: 'Loteamentos' },
+    { to: '/empreendimentos', icon: <HiOfficeBuilding size={24} />, label: 'Imóveis' },
     { to: '/perfil', icon: <FiUser size={24} />, label: 'Meu Perfil' },
   ];
 
@@ -71,18 +71,18 @@ const Layout = () => {
         <div className="brand" style={{ marginBottom: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}>
           <img 
             src="/logo_icon.png?v=6" 
-            alt="Sheets Park" 
+            alt="Royal Imobiliária"
             style={{ 
               width: '80px', 
               height: '80px', 
               objectFit: 'cover',
               borderRadius: '50%',
-              boxShadow: '0 0 20px rgba(0, 245, 160, 0.2)',
-              border: '1px solid rgba(255, 255, 255, 0.15)'
+              backgroundColor: '#f7fafb',
+              border: '2px solid #c49653'
             }} 
           />
-          <span style={{ display: 'inline-block', fontSize: '0.65rem', color: '#00F5A0', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 700 }}>
-            Loteamentos
+          <span style={{ display: 'inline-block', fontSize: '0.65rem', color: '#c49653', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 700 }}>
+            Imóveis
           </span>
         </div>
         
@@ -133,10 +133,10 @@ const Layout = () => {
                 <img 
                   src={user.avatar_url} 
                   alt={user.nome} 
-                  style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #00F5A0', flexShrink: 0 }} 
+                  style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #c49653', flexShrink: 0 }} 
                 />
               ) : (
-                <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'rgba(0, 245, 160, 0.15)', color: '#00F5A0', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', border: '1px solid rgba(0, 245, 160, 0.3)', flexShrink: 0 }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'rgba(196, 150, 83, 0.15)', color: '#c49653', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', border: '1px solid rgba(196, 150, 83, 0.3)', flexShrink: 0 }}>
                   {user?.nome?.charAt(0)?.toUpperCase() || 'U'}
                 </div>
               )}

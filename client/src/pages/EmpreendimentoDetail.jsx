@@ -27,7 +27,7 @@ export default function EmpreendimentoDetail() {
       setEmpreendimento(empData);
       setUnidades(Array.isArray(uniData) ? uniData : []);
     } catch (err) {
-      addToast(err.message || 'Erro ao carregar loteamento', 'error');
+      addToast(err.message || 'Erro ao carregar imóvel', 'error');
     } finally {
       setLoading(false);
     }
@@ -46,7 +46,7 @@ export default function EmpreendimentoDetail() {
 
   if (!empreendimento) return (
     <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--color-text-secondary)' }}>
-      Loteamento não encontrado.
+      Imóvel não encontrado.
     </div>
   );
 
@@ -76,7 +76,7 @@ export default function EmpreendimentoDetail() {
         className="btn btn-secondary"
         style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '6px' }}
       >
-        <FiArrowLeft /> Voltar aos Loteamentos
+        <FiArrowLeft /> Voltar aos Imóveis
       </button>
 
       {/* Header Card */}
@@ -88,13 +88,13 @@ export default function EmpreendimentoDetail() {
               {empreendimento.nome}
             </h1>
             <p style={{ color: 'var(--color-text-secondary)', margin: '0.5rem 0 0 0', fontSize: '0.95rem' }}>
-              {empreendimento.endereco || empreendimento.descricao || 'Loteamento Sheets Park'}
+              {empreendimento.endereco || empreendimento.descricao || 'Imóvel Royal Imobiliária'}
             </p>
           </div>
           <span style={{ 
-            background: 'rgba(0, 245, 160, 0.15)', 
-            color: '#00F5A0', 
-            border: '1px solid rgba(0, 245, 160, 0.3)', 
+            background: 'rgba(196, 150, 83, 0.15)', 
+            color: '#c49653', 
+            border: '1px solid rgba(196, 150, 83, 0.3)', 
             padding: '6px 16px', 
             borderRadius: '20px', 
             fontSize: '0.85rem', 
@@ -108,15 +108,15 @@ export default function EmpreendimentoDetail() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem' }}>
           <div style={{ padding: '1rem', borderRadius: '12px', border: '1px solid var(--color-border)', background: 'rgba(0,0,0,0.2)' }}>
             <div style={{ fontSize: '0.7rem', color: 'var(--color-text-secondary)', textTransform: 'uppercase', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '6px' }}>
-              <FiHome size={12} /> Total de Lotes
+              <FiHome size={12} /> Total de Imóveis
             </div>
             <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#FFFFFF' }}>{stats.total}</div>
           </div>
-          <div style={{ padding: '1rem', borderRadius: '12px', border: '1px solid rgba(0,245,160,0.3)', background: 'rgba(0,245,160,0.05)' }}>
-            <div style={{ fontSize: '0.7rem', color: '#00F5A0', textTransform: 'uppercase', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '6px' }}>
+          <div style={{ padding: '1rem', borderRadius: '12px', border: '1px solid rgba(196, 150, 83,0.3)', background: 'rgba(196, 150, 83,0.05)' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c49653', textTransform: 'uppercase', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '6px' }}>
               <FiCheckCircle size={12} /> Disponíveis
             </div>
-            <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#00F5A0' }}>{stats.disponivel}</div>
+            <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#c49653' }}>{stats.disponivel}</div>
           </div>
           <div style={{ padding: '1rem', borderRadius: '12px', border: '1px solid rgba(251,191,36,0.3)', background: 'rgba(251,191,36,0.05)' }}>
             <div style={{ fontSize: '0.7rem', color: '#FBBF24', textTransform: 'uppercase', letterSpacing: '1px', display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '6px' }}>
@@ -136,14 +136,14 @@ export default function EmpreendimentoDetail() {
       {/* Filter Tabs + Title */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '1rem' }}>
         <h2 className="font-heading" style={{ fontSize: '1.4rem', margin: 0, fontWeight: 700, color: '#FFFFFF' }}>
-          Mapa de Lotes
+          Mapa de Imóveis
         </h2>
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
           {[
             { key: 'todos', label: `Todos (${unidades.length})` },
-            { key: 'quadra a', label: '🏡 Quadra A' },
-            { key: 'quadra b', label: '🏡 Quadra B' },
-            { key: 'quadra', label: '🏢 Quadra Comercial' },
+            { key: 'bloco/setor a', label: '🏡 bloco/setor A' },
+            { key: 'bloco/setor b', label: '🏡 bloco/setor B' },
+            { key: 'bloco/setor', label: '🏢 bloco/setor Comercial' },
             { key: 'setor', label: '🌊 Setor Beira-Rio' },
           ].map(filter => (
             <button 
@@ -161,8 +161,8 @@ export default function EmpreendimentoDetail() {
       {/* Lot Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
         {filteredUnidades.map(unidade => {
-          const statusColor = unidade.status === 'disponivel' ? '#00F5A0' : unidade.status === 'reservado' ? '#FBBF24' : '#F43F5E';
-          const statusBg = unidade.status === 'disponivel' ? 'rgba(0,245,160,0.12)' : unidade.status === 'reservado' ? 'rgba(251,191,36,0.12)' : 'rgba(244,63,94,0.12)';
+          const statusColor = unidade.status === 'disponivel' ? '#c49653' : unidade.status === 'reservado' ? '#FBBF24' : '#F43F5E';
+          const statusBg = unidade.status === 'disponivel' ? 'rgba(196, 150, 83,0.12)' : unidade.status === 'reservado' ? 'rgba(251,191,36,0.12)' : 'rgba(244,63,94,0.12)';
           const statusLabel = unidade.status === 'disponivel' ? 'Disponível' : unidade.status === 'reservado' ? 'Reservado' : 'Vendido';
 
           return (
@@ -192,7 +192,7 @@ export default function EmpreendimentoDetail() {
                 {unidade.area_m2 > 0 && <div>Área: <span style={{ color: '#FFFFFF', fontWeight: 500 }}>{unidade.area_m2} m²</span></div>}
               </div>
               
-              <div style={{ fontWeight: 800, fontSize: '1.1rem', color: '#00F5A0' }}>
+              <div style={{ fontWeight: 800, fontSize: '1.1rem', color: '#c49653' }}>
                 {formatCurrency(unidade.valor)}
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function EmpreendimentoDetail() {
 
         {filteredUnidades.length === 0 && (
           <div className="card" style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '3rem', color: 'var(--color-text-secondary)' }}>
-            Nenhum lote encontrado nesta categoria.
+            Nenhum imóvel encontrado nesta categoria.
           </div>
         )}
       </div>

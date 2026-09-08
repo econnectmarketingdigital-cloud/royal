@@ -88,7 +88,7 @@ export default function Equipe() {
 
       {user?.role === 'gestor' && (
         <div className="card" style={{ marginBottom: '2rem', padding: '2rem' }}>
-          <h2 className="font-heading" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.4rem', color: '#00F5A0', margin: '0 0 1.5rem 0' }}>
+          <h2 className="font-heading" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.4rem', color: '#c49653', margin: '0 0 1.5rem 0' }}>
             <FiUserPlus /> Novo Membro da Equipe
           </h2>
           <form onSubmit={handleAddCorretor} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.25rem', alignItems: 'end' }}>
@@ -172,12 +172,12 @@ export default function Equipe() {
                         <img 
                           src={u.avatar_url} 
                           alt={u.nome} 
-                          style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '1.5px solid #00F5A0' }} 
+                          style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '1.5px solid #c49653' }} 
                         />
                       ) : (
                         <div style={{ 
                           width: '36px', height: '36px', borderRadius: '50%', 
-                          backgroundColor: 'rgba(0,245,160,0.15)', color: '#00F5A0',
+                          backgroundColor: 'rgba(196, 150, 83,0.15)', color: '#c49653',
                           display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '0.85rem'
                         }}>
                           {u.nome.substring(0, 2).toUpperCase()}
@@ -192,16 +192,16 @@ export default function Equipe() {
                   <td style={{ padding: '1rem 1.5rem' }}>
                     <span style={{ 
                       padding: '4px 10px', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase',
-                      backgroundColor: u.role === 'gestor' ? 'rgba(0,245,160,0.12)' : 'rgba(255,255,255,0.06)',
-                      color: u.role === 'gestor' ? '#00F5A0' : 'var(--color-text-secondary)',
-                      border: u.role === 'gestor' ? '1px solid rgba(0,245,160,0.3)' : '1px solid rgba(255,255,255,0.1)'
+                      backgroundColor: u.role === 'gestor' ? 'rgba(196, 150, 83,0.12)' : 'rgba(255,255,255,0.06)',
+                      color: u.role === 'gestor' ? '#c49653' : 'var(--color-text-secondary)',
+                      border: u.role === 'gestor' ? '1px solid rgba(196, 150, 83,0.3)' : '1px solid rgba(255,255,255,0.1)'
                     }}>
                       {u.role === 'gestor' ? 'Gestor' : 'Corretor'}
                     </span>
                   </td>
                   <td style={{ padding: '1rem 1.5rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: u.disponivel_rodizio ? '#00F5A0' : '#F43F5E' }} />
+                      <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: u.disponivel_rodizio ? '#c49653' : '#F43F5E' }} />
                       <span style={{ fontSize: '0.85rem', color: '#FFFFFF' }}>{u.disponivel_rodizio ? 'Disponível (Rodízio)' : 'Fora do Rodízio'}</span>
                     </div>
                   </td>

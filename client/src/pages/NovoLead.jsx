@@ -75,7 +75,7 @@ export default function NovoLead() {
           <FiArrowLeft /> Voltar
         </button>
         <h1 className="font-heading" style={{ fontSize: '1.75rem', margin: 0, fontWeight: 800, color: '#FFFFFF', display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <FiUserPlus style={{ color: '#00F5A0' }} /> Novo Lead
+          <FiUserPlus style={{ color: '#c49653' }} /> Novo Lead
         </h1>
       </div>
 
@@ -133,7 +133,7 @@ export default function NovoLead() {
 
           <div>
             <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>
-              Loteamento / Opção de Interesse
+              Imóvel / Opção de Interesse
             </label>
             <select 
               name="empreendimento_interesse_id" 
@@ -158,7 +158,7 @@ export default function NovoLead() {
               value={formData.observacoes} 
               onChange={handleChange} 
               rows="4"
-              placeholder="Ex: Cliente tem interesse em lote residencial próximo à área de lazer..."
+              placeholder="Ex: Cliente tem interesse em imóvel residencial próximo à área de lazer..."
               className="input"
               style={{ width: '100%', resize: 'vertical' }}
             />

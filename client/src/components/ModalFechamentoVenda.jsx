@@ -94,10 +94,10 @@ export default function ModalFechamentoVenda({ isOpen, onClose, leadId, onSucces
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       backdropFilter: 'blur(6px)'
     }}>
-      <div className="card" style={{ width: '100%', maxWidth: '500px', margin: '20px', padding: '2rem', border: '1px solid rgba(0, 245, 160, 0.3)' }}>
+      <div className="card" style={{ width: '100%', maxWidth: '500px', margin: '20px', padding: '2rem', border: '1px solid rgba(196, 150, 83, 0.3)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
           <div>
-            <h2 className="font-heading" style={{ fontSize: '1.5rem', margin: 0, color: '#00F5A0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h2 className="font-heading" style={{ fontSize: '1.5rem', margin: 0, color: '#c49653', display: 'flex', alignItems: 'center', gap: '8px' }}>
               💰 Registrar Fechamento de Venda
             </h2>
             <p style={{ color: 'var(--color-text-secondary)', margin: '0.5rem 0 0 0', fontSize: '0.9rem' }}>
@@ -112,7 +112,7 @@ export default function ModalFechamentoVenda({ isOpen, onClose, leadId, onSucces
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           <div>
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text)' }}>
-              Qual produto/loteamento foi vendido?
+              Qual produto/imóvel foi vendido?
             </label>
             <select 
               className="input" 
@@ -121,7 +121,7 @@ export default function ModalFechamentoVenda({ isOpen, onClose, leadId, onSucces
               required
               style={{ width: '100%' }}
             >
-              <option value="" disabled>Selecione um loteamento</option>
+              <option value="" disabled>Selecione um imóvel</option>
               {empreendimentos.map(emp => (
                 <option key={emp.id} value={emp.id}>{emp.nome}</option>
               ))}
@@ -139,7 +139,7 @@ export default function ModalFechamentoVenda({ isOpen, onClose, leadId, onSucces
               onChange={handleValorChange}
               placeholder="R$ 0,00"
               required
-              style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#00F5A0', width: '100%' }}
+              style={{ fontSize: '1.4rem', fontWeight: 'bold', color: '#c49653', width: '100%' }}
             />
           </div>
 

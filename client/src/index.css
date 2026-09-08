@@ -6,42 +6,42 @@
    CSS RESET & VARIABLES
    ========================================================================== */
 :root {
-  /* Colors - Sheets Park Modern Dark & Urban Green */
-  --color-bg: #08090A;
-  --color-surface: rgba(18, 20, 24, 0.7);
-  --color-surface-hover: rgba(255, 255, 255, 0.06);
-  --color-surface-elevated: rgba(24, 27, 33, 0.9);
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-light: rgba(255, 255, 255, 0.15);
+  /* Colors - Royal Imobiliária Brand Manual */
+  --color-bg: #1e3344;
+  --color-surface: rgba(22, 38, 51, 0.7);
+  --color-surface-hover: rgba(255, 255, 255, 0.08);
+  --color-surface-elevated: rgba(20, 34, 45, 0.9);
+  --color-border: rgba(196, 150, 83, 0.2);
+  --color-border-light: rgba(196, 150, 83, 0.35);
   
-  --color-primary: #00F5A0;
-  --color-primary-hover: #00D68B;
-  --color-primary-soft: rgba(0, 245, 160, 0.12);
-  --color-primary-glow: rgba(0, 245, 160, 0.35);
+  --color-primary: #c49653;
+  --color-primary-hover: #fff4c9;
+  --color-primary-soft: rgba(196, 150, 83, 0.15);
+  --color-primary-glow: rgba(196, 150, 83, 0.35);
   
-  --color-secondary: #E4E4E7;
-  --color-accent: #10B981;
+  --color-secondary: #f7fafb;
+  --color-accent: #7b7e83;
   
-  --color-text: #FFFFFF;
-  --color-text-secondary: #A1A1AA;
-  --color-text-tertiary: #71717A;
+  --color-text: #f7fafb;
+  --color-text-secondary: #cbd5e1;
+  --color-text-tertiary: #94a3b8;
   
-  --color-success: #00F5A0;
-  --color-success-soft: rgba(0, 245, 160, 0.15);
-  --color-warning: #FBBF24;
-  --color-warning-soft: rgba(251, 191, 36, 0.15);
+  --color-success: #10B981;
+  --color-success-soft: rgba(16, 185, 129, 0.15);
+  --color-warning: #fff4c9;
+  --color-warning-soft: rgba(255, 244, 201, 0.15);
   --color-danger: #F43F5E;
   --color-danger-soft: rgba(244, 63, 94, 0.15);
-  --color-info: #38BDF8;
-  --color-info-soft: rgba(56, 189, 248, 0.15);
+  --color-info: #7b7e83;
+  --color-info-soft: rgba(123, 126, 131, 0.15);
   
   --color-meta-ads: #3B82F6;
   --color-google-ads: #EF4444;
-  --color-manual: #00F5A0;
+  --color-manual: #c49653;
 
   /* Typography — geometric sans-serif */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', 'Queensila', serif;
+  --font-body: 'Montserrat', sans-serif;
 
   /* Spacing */
   --spacing-1: 0.25rem;
@@ -222,8 +222,8 @@ a:hover {
 
 .card:hover {
   transform: translateY(-2px);
-  border-color: rgba(0, 245, 160, 0.25);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 245, 160, 0.1);
+  border-color: rgba(196, 150, 83, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(196, 150, 83, 0.1);
 }
 
 .card::before {
@@ -276,10 +276,10 @@ a:hover {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #00F5A0 0%, #00D68B 100%);
-  color: #061912;
+  background: linear-gradient(135deg, #c49653 0%, #fff4c9 100%);
+  color: #1e3344;
   border: none;
-  box-shadow: 0 4px 16px rgba(0, 245, 160, 0.25);
+  box-shadow: 0 4px 16px rgba(196, 150, 83, 0.25);
   font-weight: 700;
   letter-spacing: 0.3px;
   transition: all 0.3s ease;
@@ -287,8 +287,8 @@ a:hover {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 245, 160, 0.45);
-  background: linear-gradient(135deg, #24fdb0, #00e092);
+  box-shadow: 0 8px 25px rgba(196, 150, 83, 0.45);
+  background: linear-gradient(135deg, #fff4c9, #c49653);
 }
 
 .btn-secondary {
@@ -344,8 +344,8 @@ input, select, textarea, .input, .glass-input {
 
 input:focus, select:focus, textarea:focus, .input:focus, .glass-input:focus {
   outline: none;
-  border-color: rgba(0, 245, 160, 0.6) !important;
-  box-shadow: 0 0 0 4px rgba(0, 245, 160, 0.15) !important;
+  border-color: rgba(196, 150, 83, 0.6) !important;
+  box-shadow: 0 0 0 4px rgba(196, 150, 83, 0.15) !important;
   background: rgba(15, 18, 24, 0.8) !important;
 }
 
@@ -612,10 +612,10 @@ select option {
 }
 
 .sidebar .btn-primary {
-  background: rgba(0, 245, 160, 0.1) !important;
-  border: 1px solid rgba(0, 245, 160, 0.25) !important;
-  color: #00F5A0 !important;
-  box-shadow: 0 0 15px rgba(0, 245, 160, 0.1) !important;
+  background: rgba(196, 150, 83, 0.1) !important;
+  border: 1px solid rgba(196, 150, 83, 0.25) !important;
+  color: #c49653 !important;
+  box-shadow: 0 0 15px rgba(196, 150, 83, 0.1) !important;
 }
 
 .sidebar .btn:hover:not(.btn-primary) {
@@ -773,15 +773,15 @@ select option {
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, #00F5A0, #00D68B);
-    color: #061912;
+    background: linear-gradient(135deg, #c49653, #fff4c9);
+    color: #1e3344;
     width: 56px;
     height: 56px;
     border-radius: var(--radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 20px rgba(0, 245, 160, 0.4);
+    box-shadow: 0 4px 20px rgba(196, 150, 83, 0.4);
     border: 4px solid var(--color-bg);
   }
 }
@@ -855,9 +855,9 @@ select option {
 }
 
 .kanban-card:hover {
-  border-color: rgba(0, 245, 160, 0.4);
+  border-color: rgba(196, 150, 83, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 245, 160, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(196, 150, 83, 0.08);
 }
 
 .kanban-card:active {
@@ -890,7 +890,7 @@ select option {
   font-size: 2.5rem;
   color: var(--color-primary);
   line-height: 1;
-  text-shadow: 0 0 25px rgba(0, 245, 160, 0.3);
+  text-shadow: 0 0 25px rgba(196, 150, 83, 0.3);
 }
 
 .stat-label {
@@ -913,11 +913,11 @@ select option {
 
 .thermometer-fill {
   height: 100%;
-  background: linear-gradient(90deg, #00F5A0, #0EA5E9);
+  background: linear-gradient(90deg, #c49653, #fff4c9);
   border-radius: var(--radius-full);
   transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 245, 160, 0.4);
+  box-shadow: 0 0 15px rgba(196, 150, 83, 0.4);
 }
 .thermometer-fill::after {
   content: '';
@@ -954,7 +954,7 @@ select option {
 
 .ranking-item.is-me {
   border-left: 3px solid var(--color-primary);
-  background-color: rgba(0, 245, 160, 0.08);
+  background-color: rgba(196, 150, 83, 0.08);
 }
 
 /* ==========================================================================
@@ -976,9 +976,9 @@ select option {
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 245, 160, 0.4); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0, 245, 160, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 245, 160, 0); }
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 150, 83, 0.4); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(196, 150, 83, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 150, 83, 0); }
 }
 
 @keyframes shimmer {
@@ -1021,7 +1021,7 @@ select option {
 .spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid rgba(0, 245, 160, 0.2);
+  border: 3px solid rgba(196, 150, 83, 0.2);
   border-radius: 50%;
   border-top-color: var(--color-primary);
   animation: spin 1s ease-in-out infinite;

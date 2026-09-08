@@ -65,103 +65,74 @@ const Login = () => {
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center', 
-      backgroundColor: '#08090A',
+      backgroundColor: '#1e3344',
       position: 'relative',
       overflow: 'hidden'
     }}>
-      {/* Urban Topographic Grid & Ambient Glow */}
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        pointerEvents: 'none',
-        backgroundImage: `
-          linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)
-        `,
-        backgroundSize: '40px 40px',
-        zIndex: 0
-      }} />
-
-      {/* Ambient Glows */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }}>
-        <div style={{
-          position: 'absolute', top: '-15%', left: '10%', width: '50vw', height: '50vw',
-          background: 'radial-gradient(circle, rgba(0, 245, 160, 0.12) 0%, transparent 70%)',
-          borderRadius: '50%', filter: 'blur(90px)', animation: 'float 12s infinite alternate ease-in-out'
-        }} />
-        <div style={{
-          position: 'absolute', bottom: '-20%', right: '5%', width: '55vw', height: '55vw',
-          background: 'radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%)',
-          borderRadius: '50%', filter: 'blur(100px)', animation: 'float 15s infinite alternate-reverse ease-in-out'
-        }} />
-      </div>
-
       <style>{`
-        @keyframes float { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(4%, 4%) scale(1.08); } }
-        .glass-login-card {
-          background: rgba(14, 16, 20, 0.75);
-          backdrop-filter: blur(24px);
-          -webkit-backdrop-filter: blur(24px);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(0, 245, 160, 0.15);
-          border-radius: 24px;
-          padding: 3rem 2.5rem;
+        .login-card {
+          background: rgba(30, 51, 68, 0.4);
+          border: 1px solid rgba(196, 150, 83, 0.15);
+          backdrop-filter: blur(12px);
+          border-radius: 12px;
+          padding: 2rem;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
           position: relative;
           z-index: 10;
         }
-        .glass-input {
-          background: rgba(8, 10, 14, 0.7) !important;
-          border: 1px solid rgba(255, 255, 255, 0.1) !important;
-          color: white !important;
-          border-radius: 12px !important;
-          padding: 0.85rem 1rem !important;
-          transition: all 0.3s ease !important;
+        .clean-input {
+          background: rgba(22, 38, 51, 0.6) !important;
+          border: 1px solid rgba(247, 250, 251, 0.1) !important;
+          color: #f7fafb !important;
+          padding: 10px 14px;
+          border-radius: 8px;
+          transition: all 0.2s;
         }
-        .glass-input:focus {
-          border-color: rgba(0, 245, 160, 0.6) !important;
-          box-shadow: 0 0 0 4px rgba(0, 245, 160, 0.15) !important;
-          background: rgba(12, 15, 20, 0.9) !important;
+        .clean-input:focus {
+          border-color: #c49653 !important;
+          box-shadow: 0 0 0 3px rgba(196, 150, 83, 0.2) !important;
+          outline: none;
         }
-        .premium-btn {
-          background: linear-gradient(135deg, #00F5A0 0%, #00D68B 100%);
+        .clean-input::placeholder {
+          color: rgba(247, 250, 251, 0.3);
+        }
+        .gold-btn {
+          background: #c49653;
           border: none;
-          border-radius: 12px;
-          color: #061912;
-          font-weight: 700;
+          border-radius: 8px;
+          color: #1e3344;
+          font-weight: 600;
           letter-spacing: 0.5px;
-          padding: 1rem;
+          padding: 12px;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(0, 245, 160, 0.25);
           cursor: pointer;
+          box-shadow: 0 4px 15px rgba(196, 150, 83, 0.2);
         }
-        .premium-btn:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 30px rgba(0, 245, 160, 0.45);
-          background: linear-gradient(135deg, #24fdb0, #00e092);
+        .gold-btn:hover {
+          background: #fff4c9;
+          transform: translateY(-1px);
+          box-shadow: 0 6px 20px rgba(196, 150, 83, 0.3);
         }
       `}</style>
 
-      <div className="glass-login-card" style={{ width: '100%', maxWidth: '420px', margin: '2rem' }}>
-        <div style={{ textAlign: 'center', marginBottom: '2.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div className="login-card" style={{ width: '100%', maxWidth: '380px', margin: '1rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
           <img 
-            src="/logo_icon.png?v=6" 
-            alt="Sheets Park" 
+            src="/logo.png" 
+            alt="Royal Imobiliária" 
             style={{ 
-              width: '125px', 
-              height: '125px', 
-              objectFit: 'cover', 
-              borderRadius: '50%',
-              display: 'block',
-              boxShadow: '0 0 25px rgba(0, 245, 160, 0.25)',
-              border: '1px solid rgba(255, 255, 255, 0.15)'
+              width: '180px', 
+              height: 'auto', 
+              objectFit: 'contain', 
+              display: 'inline-block',
+              marginBottom: '0.2rem'
             }} 
           />
-          <p style={{ color: '#00F5A0', letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.7rem', fontWeight: 700, marginTop: '1rem', opacity: 0.9 }}>
-            Gestão de Loteamentos & Vendas
+          <p style={{ color: '#c49653', letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.65rem', fontWeight: 600 }}>
+            Gestão de Imóveis & Vendas
           </p>
         </div>
 
-        {/* Google Login Button */}
         <button 
           type="button"
           onClick={handleGoogleLogin}
@@ -172,21 +143,21 @@ const Login = () => {
             alignItems: 'center',
             justifyContent: 'center',
             gap: '12px',
-            backgroundColor: 'rgba(255,255,255,0.05)',
-            color: '#fff',
-            border: '1px solid rgba(255,255,255,0.1)',
-            borderRadius: '12px',
+            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+            color: '#f7fafb',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            borderRadius: '8px',
             padding: '12px 16px',
             fontSize: '0.95rem',
             fontWeight: 600,
             cursor: 'pointer',
             transition: 'all 0.2s ease',
-            marginBottom: '1.5rem'
+            marginBottom: '1rem'
           }}
-          onMouseOver={e => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)'; }}
-          onMouseOut={e => { e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'; }}
+          onMouseOver={e => { e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; }}
+          onMouseOut={e => { e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)'; }}
         >
-          <svg width="20" height="20" viewBox="0 0 48 48">
+          <svg width="18" height="18" viewBox="0 0 48 48">
             <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
             <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
             <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
@@ -196,23 +167,22 @@ const Login = () => {
           {googleLoading ? 'Conectando...' : 'Entrar com o Google'}
         </button>
 
-        {/* Divider */}
-        <div style={{ display: 'flex', alignItems: 'center', margin: '0 0 1.5rem 0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', margin: '0 0 1rem 0' }}>
           <div style={{ flex: 1, height: '1px', backgroundColor: 'rgba(255,255,255,0.1)' }}></div>
-          <span style={{ padding: '0 12px', fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1px' }}>ou com e-mail</span>
+          <span style={{ padding: '0 12px', fontSize: '0.7rem', color: '#7b7e83', textTransform: 'uppercase', letterSpacing: '1px' }}>ou com e-mail</span>
           <div style={{ flex: 1, height: '1px', backgroundColor: 'rgba(255,255,255,0.1)' }}></div>
         </div>
 
         <form onSubmit={handleSubmit}>
-          <div className="input-group" style={{ marginBottom: '1rem' }}>
-            <label style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', marginBottom: '0.4rem', display: 'block' }}>Email</label>
-            <input type="email" className="input glass-input" value={email} onChange={e => setEmail(e.target.value)} required style={{ width: '100%' }} />
+          <div style={{ marginBottom: '0.8rem' }}>
+            <label style={{ color: '#f7fafb', fontSize: '0.8rem', marginBottom: '0.3rem', display: 'block', fontWeight: 500 }}>Email</label>
+            <input type="email" className="clean-input" value={email} onChange={e => setEmail(e.target.value)} placeholder="admin@royal.com.br" required style={{ width: '100%', boxSizing: 'border-box' }} />
           </div>
-          <div className="input-group" style={{ marginBottom: '1.5rem' }}>
-            <label style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', marginBottom: '0.4rem', display: 'block' }}>Senha</label>
-            <input type="password" className="input glass-input" value={password} onChange={e => setPassword(e.target.value)} required style={{ width: '100%' }} />
+          <div style={{ marginBottom: '1.5rem' }}>
+            <label style={{ color: '#f7fafb', fontSize: '0.8rem', marginBottom: '0.3rem', display: 'block', fontWeight: 500 }}>Senha</label>
+            <input type="password" className="clean-input" value={password} onChange={e => setPassword(e.target.value)} placeholder="••••••••" required style={{ width: '100%', boxSizing: 'border-box' }} />
           </div>
-          <button type="submit" className="premium-btn" style={{ width: '100%' }} disabled={loading}>
+          <button type="submit" className="gold-btn" style={{ width: '100%' }} disabled={loading}>
             {loading ? 'Autenticando...' : 'Acessar Plataforma'}
           </button>
         </form>

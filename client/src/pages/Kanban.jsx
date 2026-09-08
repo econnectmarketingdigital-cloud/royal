@@ -138,7 +138,7 @@ const Kanban = () => {
             className="btn btn-sm"
             style={{
               display: 'flex', alignItems: 'center', gap: '6px',
-              backgroundColor: selectedCorretorId === user?.id ? 'var(--color-primary, #00F5A0)' : 'var(--color-surface)',
+              backgroundColor: selectedCorretorId === user?.id ? 'var(--color-primary, #c49653)' : 'var(--color-surface)',
               color: selectedCorretorId === user?.id ? '#061912' : 'var(--color-text)',
               fontWeight: 600, border: '1px solid var(--color-border)', borderRadius: '6px', padding: '6px 12px'
             }}
@@ -152,7 +152,7 @@ const Kanban = () => {
             className="btn btn-sm"
             style={{
               display: 'flex', alignItems: 'center', gap: '6px',
-              backgroundColor: selectedCorretorId === '' ? 'var(--color-primary, #00F5A0)' : 'var(--color-surface)',
+              backgroundColor: selectedCorretorId === '' ? 'var(--color-primary, #c49653)' : 'var(--color-surface)',
               color: selectedCorretorId === '' ? '#061912' : 'var(--color-text)',
               fontWeight: 600, border: '1px solid var(--color-border)', borderRadius: '6px', padding: '6px 12px'
             }}
