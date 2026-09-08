@@ -39,7 +39,7 @@ export async function notifyCorretorNewLead(leadId) {
     // 2. Check for Brevo API key
     const brevoApiKey = process.env.BREVO_API_KEY;
     const senderEmail = process.env.SENDER_EMAIL || 'econnectmarketingdigital@gmail.com';
-    const senderName = process.env.SENDER_NAME || 'Sheets Park CRM';
+    const senderName = process.env.SENDER_NAME || 'CRM Royal Imobiliária';
 
     if (!brevoApiKey) {
       console.log('----------------------------------------------------');
@@ -59,50 +59,61 @@ export async function notifyCorretorNewLead(leadId) {
       <head>
         <meta charset="utf-8">
         <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0c0d10; color: #f3f4f6; margin: 0; padding: 20px; }
-          .card { background-color: #121418; border: 1px solid rgba(0, 245, 160, 0.25); border-radius: 16px; padding: 25px; max-width: 550px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-          .logo { text-align: center; margin-bottom: 20px; font-weight: bold; color: #00F5A0; font-size: 24px; letter-spacing: -0.5px; }
-          .title { color: #00F5A0; font-size: 20px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; letter-spacing: -0.5px; }
-          .lead-info { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 15px; margin-bottom: 20px; }
-          .info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f5; margin: 0; padding: 20px; }
+          .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+          .header { background: #1e3344; padding: 30px 20px; text-align: center; border-bottom: 4px solid #c49653; }
+          .logo { font-size: 24px; font-weight: 800; color: #ffffff; letter-spacing: 1px; }
+          .content { padding: 40px 30px; }
+          .greeting { font-size: 20px; color: #1f2937; margin-bottom: 20px; font-weight: 600; }
+          .message { font-size: 16px; color: #4b5563; line-height: 1.6; margin-bottom: 30px; }
+          .lead-info { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 30px; }
+          .info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #edf2f7; }
           .info-row:last-child { border-bottom: none; }
-          .label { color: #9ca3af; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-          .val { color: #ffffff; font-weight: 600; font-size: 14px; text-align: right; }
-          .btn { display: block; text-align: center; background: linear-gradient(135deg, #00F5A0, #00D68B); color: #061912 !important; font-weight: 800; text-decoration: none; padding: 12px 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,245,160,0.35); text-transform: uppercase; font-size: 13px; letter-spacing: 0.5px; }
+          .label { color: #64748b; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+          .val { color: #0f172a; font-weight: 600; font-size: 14px; text-align: right; }
+          .btn { display: block; text-align: center; background-color: #c49653; color: #ffffff !important; font-weight: 800; text-decoration: none; padding: 14px 20px; border-radius: 6px; margin-top: 20px; box-shadow: 0 4px 6px rgba(196, 150, 83, 0.25); text-transform: uppercase; font-size: 14px; }
+          .footer { background: #f1f5f9; padding: 20px; text-align: center; font-size: 13px; color: #94a3b8; }
         </style>
       </head>
       <body>
-        <div class="card">
-          <div class="logo">🍀 Sheets Park CRM</div>
-          <div class="title">🔥 Atenção Corretor! Novo Lead no CRM</div>
-          <p style="color: #9ca3af; font-size: 14px; line-height: 1.5; margin-bottom: 20px;">
-            Olá, <strong>${corretor_nome}</strong>. Um novo lead de interesse em loteamentos foi distribuído para a sua carteira. Faça o primeiro contato o mais rápido possível!
-          </p>
-          
-          <div class="lead-info">
-            <div class="info-row">
-              <span class="label">Nome</span>
-              <span class="val">${nome}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">WhatsApp / Tel</span>
-              <span class="val">${telefone}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">E-mail</span>
-              <span class="val">${email || 'Não informado'}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">Origem</span>
-              <span class="val">${origemLabel}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">Interesse</span>
-              <span class="val">${empreendimento_nome}</span>
-            </div>
+        <div class="container">
+          <div class="header">
+            <div class="logo">🏢 CRM Royal</div>
           </div>
+          <div class="content">
+            <div class="greeting">🔥 Atenção, ${corretor_nome}!</div>
+            <div class="message">
+              Um novo lead de interesse em imóveis foi distribuído para a sua carteira. Faça o primeiro contato o mais rápido possível!
+            </div>
+            
+            <div class="lead-info">
+              <div class="info-row">
+                <span class="label">Nome</span>
+                <span class="val">${nome}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">WhatsApp / Tel</span>
+                <span class="val">${telefone}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">E-mail</span>
+                <span class="val">${email || 'Não informado'}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Origem</span>
+                <span class="val">${origemLabel}</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Interesse</span>
+                <span class="val">${empreendimento_nome}</span>
+              </div>
+            </div>
 
-          <a href="https://crm-sheets-park.vercel.app/leads/${leadId}" class="btn">Visualizar Lead no CRM</a>
+            <a href="https://royal.vercel.app/leads/${leadId}" class="btn">Visualizar Lead no CRM</a>
+          </div>
+          <div class="footer">
+            Você está recebendo este alerta porque faz parte do rodízio da Royal Imobiliária.
+          </div>
         </div>
       </body>
       </html>

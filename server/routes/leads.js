@@ -70,9 +70,11 @@ router.post('/', authenticateToken, async (req, res) => {
 
     const cleanEmpId = empreendimento_interesse_id && empreendimento_interesse_id.trim() !== '' ? empreendimento_interesse_id : null;
 
+    const createdAtVal = req.body.created_at ? new Date(req.body.created_at).toISOString() : new Date().toISOString();
+
     await db.execute(`
-      INSERT INTO leads (id, nome, telefone, email, origem, campanha, anuncio, corretor_id, empreendimento_interesse_id, observacoes)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO leads (id, nome, telefone, email, origem, campanha, anuncio, corretor_id, empreendimento_interesse_id, observacoes, created_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
       id, 
       nome.trim(), 
@@ -83,7 +85,8 @@ router.post('/', authenticateToken, async (req, res) => {
       anuncio || null, 
       corretorId, 
       cleanEmpId, 
-      observacoes || null
+      observacoes || null,
+      createdAtVal
     ]);
 
     await db.execute(

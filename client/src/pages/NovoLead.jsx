@@ -18,6 +18,8 @@ export default function NovoLead() {
     telefone: '',
     email: '',
     empreendimento_interesse_id: '',
+    origem: 'Base Pessoal',
+    created_at: '',
     observacoes: ''
   });
   const [empreendimentos, setEmpreendimentos] = useState([]);
@@ -53,7 +55,8 @@ export default function NovoLead() {
         email: formData.email && formData.email.trim() ? formData.email.trim() : null,
         empreendimento_interesse_id: formData.empreendimento_interesse_id || null,
         observacoes: formData.observacoes && formData.observacoes.trim() ? formData.observacoes.trim() : null,
-        origem: 'manual'
+        origem: formData.origem || 'Base Pessoal',
+        created_at: formData.created_at || undefined
       });
       addToast('Lead cadastrado com sucesso!', 'success');
       navigate('/kanban');
@@ -128,6 +131,41 @@ export default function NovoLead() {
                 className="input"
                 style={{ width: '100%' }}
               />
+            </div>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div>
+              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>
+                Data de Entrada (Opcional)
+              </label>
+              <input 
+                type="datetime-local" 
+                name="created_at" 
+                value={formData.created_at} 
+                onChange={handleChange}
+                className="input"
+                style={{ width: '100%' }}
+              />
+            </div>
+
+            <div>
+              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>
+                Canal / Origem
+              </label>
+              <select 
+                name="origem" 
+                value={formData.origem} 
+                onChange={handleChange}
+                className="input"
+                style={{ width: '100%' }}
+              >
+                <option value="Base Pessoal">Base Pessoal</option>
+                <option value="Indicação">Indicação</option>
+                <option value="Meta Ads">Meta Ads</option>
+                <option value="Google Ads">Google Ads</option>
+                <option value="Outros">Outros</option>
+              </select>
             </div>
           </div>
 
