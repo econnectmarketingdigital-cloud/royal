@@ -106,4 +106,11 @@ export default {
   webhooks: {
     simulateWebhook: (data) => fetchWithAuth('/webhooks/simulate', { method: 'POST', body: JSON.stringify(data) }),
   },
+  funil: {
+    getFunil: () => fetchWithAuth('/funil'),
+    createEtapaFunil: (data) => fetchWithAuth('/funil', { method: 'POST', body: JSON.stringify(data) }),
+    updateEtapaFunil: (id, data) => fetchWithAuth(`/funil/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
+    deleteEtapaFunil: (id) => fetchWithAuth(`/funil/${id}`, { method: 'DELETE' }),
+    reorderFunil: (orderedIds) => fetchWithAuth('/funil/reorder', { method: 'POST', body: JSON.stringify({ orderedIds }) }),
+  }
 };

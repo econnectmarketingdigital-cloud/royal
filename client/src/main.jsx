@@ -5,6 +5,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 import App from './App.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx'
 import { ToastProvider } from './contexts/ToastContext.jsx'
+import { FunilProvider } from './contexts/FunilContext.jsx'
 import './index.css'
 
 // O Client ID deve vir do .env idealmente, mas vamos deixar um espaço para o usuário colocar
@@ -16,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <ToastProvider>
           <AuthProvider>
-            <App />
+            <FunilProvider>
+              <App />
+            </FunilProvider>
           </AuthProvider>
         </ToastProvider>
       </BrowserRouter>

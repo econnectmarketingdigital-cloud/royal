@@ -110,6 +110,13 @@ async function migrate() {
         created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
       );
 
+      CREATE TABLE IF NOT EXISTS funil_etapas (
+        id VARCHAR(50) PRIMARY KEY,
+        nome VARCHAR(100) NOT NULL,
+        cor VARCHAR(20) NOT NULL,
+        ordem INT NOT NULL
+      );
+
       CREATE TABLE IF NOT EXISTS reservas (
         id VARCHAR(50) PRIMARY KEY,
         unidade_id VARCHAR(50) REFERENCES unidades(id) ON DELETE CASCADE,

@@ -5,32 +5,7 @@ import { useToast } from '../contexts/ToastContext';
 import { useAuth } from '../contexts/AuthContext';
 import { FiPlus, FiSearch, FiFilter, FiUploadCloud } from 'react-icons/fi';
 import ImportLeadsModal from '../components/ImportLeadsModal';
-
-const getEtapaColor = (etapa) => {
-  const colors = {
-    novo: '#3498db',
-    contato_feito: '#f1c40f',
-    visita_agendada: '#9b59b6',
-    proposta: '#e67e22',
-    documentacao: '#34495e',
-    fechado: '#2ecc71',
-    perdido: '#e74c3c'
-  };
-  return colors[etapa] || '#95a5a6';
-};
-
-const getEtapaLabel = (etapa) => {
-  const labels = {
-    novo: 'Novo',
-    contato_feito: 'Contato Feito',
-    visita_agendada: 'Visita Agendada',
-    proposta: 'Proposta',
-    documentacao: 'Documentação',
-    fechado: 'Fechado',
-    perdido: 'Perdido'
-  };
-  return labels[etapa] || etapa;
-};
+import { useFunil } from '../contexts/FunilContext';
 
 const getOrigemColor = (origem) => {
   const colors = {
@@ -51,6 +26,7 @@ const formatDate = (dateStr) => {
 
 export default function Leads() {
   const { user, isGestor } = useAuth();
+  const { getEtapaNome, getEtapaColor, etapas } = useFunil();
   const [searchParams] = useSearchParams();
   const [leads, setLeads] = useState([]);
   const [corretores, setCorretores] = useState([]);
@@ -193,13 +169,9 @@ export default function Leads() {
           style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ddd' }}
         >
           <option value="">Todas as Etapas</option>
-          <option value="novo">Novo</option>
-          <option value="contato_feito">Contato Feito</option>
-          <option value="visita_agendada">Visita Agendada</option>
-          <option value="proposta">Proposta</option>
-          <option value="documentacao">Documentação</option>
-          <option value="fechado">Fechado</option>
-          <option value="perdido">Perdido</option>
+          {etapas.map(etapa => (
+            <option key={etapa.id} value={etapa.id}>{etapa.nome}</option>
+          ))}
         </select>
         <select 
           value={origemFilter} 
@@ -304,7 +276,7 @@ export default function Leads() {
                         backgroundColor: getEtapaColor(lead.etapa), color: '#fff', 
                         padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase'
                       }}>
-                        {getEtapaLabel(lead.etapa)}
+                        {getEtapaNome(lead.etapa)}
                       </span>
                     </td>
                     <td style={{ color: 'var(--color-text-secondary)' }}>{lead.empreendimento_nome || '-'}</td>

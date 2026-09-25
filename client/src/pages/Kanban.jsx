@@ -4,19 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import { useToast } from '../contexts/ToastContext';
 import { useAuth } from '../contexts/AuthContext';
+import { useFunil } from '../contexts/FunilContext';
 import { FiClock, FiMessageCircle, FiPhone, FiUser, FiUsers, FiFilter } from 'react-icons/fi';
 import ModalFechamentoVenda from '../components/ModalFechamentoVenda';
 import { getWhatsAppUrl } from '../lib/utils';
-
-const columns = [
-  { id: 'novo', title: 'Novo' },
-  { id: 'contato_feito', title: 'Contato Feito' },
-  { id: 'visita_agendada', title: 'Visita Agendada' },
-  { id: 'proposta', title: 'Proposta' },
-  { id: 'documentacao', title: 'Documentação' },
-  { id: 'fechado', title: 'Fechado' },
-  { id: 'perdido', title: 'Perdido/S. Resposta' },
-];
 
 const originBadgeClass = (origem) => {
   if (origem === 'meta_ads') return 'badge-meta';
@@ -32,6 +23,7 @@ const originLabel = (origem) => {
 
 const Kanban = () => {
   const { user, isGestor } = useAuth();
+  const { etapas: columns, loading: loadingFunil } = useFunil();
   const [leads, setLeads] = useState([]);
   const [corretores, setCorretores] = useState([]);
   const [selectedCorretorId, setSelectedCorretorId] = useState('');
@@ -190,8 +182,8 @@ const Kanban = () => {
             const colLeads = getLeadsByEtapa(col.id);
             return (
               <div key={col.id} style={{ minWidth: '260px', flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', padding: '0.5rem 0.75rem', background: 'var(--color-surface)', borderRadius: '8px' }}>
-                  <span style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--color-text)' }}>{col.title}</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', padding: '0.5rem 0.75rem', background: 'var(--color-surface)', borderRadius: '8px', borderTop: `3px solid ${col.cor || 'var(--color-border)'}` }}>
+                  <span style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--color-text)' }}>{col.nome}</span>
                   <span className="badge" style={{ background: 'var(--color-primary-soft)', color: 'var(--color-primary)' }}>{colLeads.length}</span>
                 </div>
                 

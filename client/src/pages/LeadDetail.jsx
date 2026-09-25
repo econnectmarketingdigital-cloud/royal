@@ -6,20 +6,7 @@ import { FiPhone, FiMail, FiMessageCircle, FiEdit3, FiInfo, FiClock, FiCheck, Fi
 import ModalFechamentoVenda from '../components/ModalFechamentoVenda';
 import { getWhatsAppUrl } from '../lib/utils';
 
-const ETAPAS = ['novo', 'contato_feito', 'visita_agendada', 'proposta', 'documentacao', 'fechado'];
-
-const getEtapaLabel = (etapa) => {
-  const labels = {
-    novo: 'Novo',
-    contato_feito: 'Contato Feito',
-    visita_agendada: 'Visita Agendada',
-    proposta: 'Proposta',
-    documentacao: 'Documentação',
-    fechado: 'Fechado',
-    perdido: 'Perdido'
-  };
-  return labels[etapa] || etapa;
-};
+import { useFunil } from '../contexts/FunilContext';
 
 const formatDate = (dateStr) => {
   if (!dateStr) return '-';
@@ -33,6 +20,7 @@ export default function LeadDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { addToast } = useToast();
+  const { etapas, getEtapaNome } = useFunil();
   
   const [lead, setLead] = useState(null);
   const [historico, setHistorico] = useState([]);
@@ -112,10 +100,10 @@ export default function LeadDetail() {
   };
 
   const handleNextEtapa = async () => {
-    if (!lead) return;
-    const currentIndex = ETAPAS.indexOf(lead.etapa);
-    if (currentIndex >= 0 && currentIndex < ETAPAS.length - 1) {
-      handleEtapaChange(ETAPAS[currentIndex + 1]);
+    if (!lead || etapas.length === 0) return;
+    const currentIndex = etapas.findIndex(e => e.id === lead.etapa);
+    if (currentIndex >= 0 && currentIndex < etapas.length - 1) {
+      handleEtapaChange(etapas[currentIndex + 1].id);
     }
   };
 
@@ -197,7 +185,7 @@ export default function LeadDetail() {
               {lead.origem}
             </span>
             <span className="badge" style={{ fontSize: '0.7rem', padding: '4px 10px', borderRadius: '12px', background: lead.etapa === 'perdido' ? 'rgba(244,63,94,0.2)' : 'rgba(196, 150, 83,0.15)', color: lead.etapa === 'perdido' ? '#F43F5E' : '#c49653', border: `1px solid ${lead.etapa === 'perdido' ? 'rgba(244,63,94,0.3)' : 'rgba(196, 150, 83,0.3)'}` }}>
-              {getEtapaLabel(lead.etapa)}
+              {getEtapaNome(lead.etapa)}
             </span>
           </h1>
           
