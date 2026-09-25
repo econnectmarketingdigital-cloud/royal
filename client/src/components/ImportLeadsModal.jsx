@@ -184,8 +184,8 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '1rem', borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem' }}>
-          <button className="btn-secondary" onClick={onClose} disabled={loading}>Cancelar</button>
-          <button className="btn-primary" onClick={handleImport} disabled={!file || loading}>
+          <button className="btn btn-secondary" onClick={onClose} disabled={loading}>Cancelar</button>
+          <button className="btn btn-primary" onClick={handleImport} disabled={!file || loading}>
             {loading ? 'Importando...' : <><FiCheckCircle style={{ marginRight: '8px' }} /> Importar Leads</>}
           </button>
         </div>
