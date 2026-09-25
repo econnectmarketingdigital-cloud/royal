@@ -1,4 +1,4 @@
-﻿import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 import Layout from './components/Layout';
 import Login from './pages/Login';
@@ -17,6 +17,7 @@ import Rodizio from './pages/Rodizio';
 import CorretorPerfil from './pages/CorretorPerfil';
 
 import Ranking from './pages/Ranking';
+import Mapa from './pages/Mapa';
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -47,6 +48,7 @@ function App() {
         <Route path="leads/:id" element={<LeadDetail />} />
         <Route path="empreendimentos" element={<Empreendimentos />} />
         <Route path="empreendimentos/:id" element={<EmpreendimentoDetail />} />
+        <Route path="mapa" element={<Mapa />} />
         <Route path="configuracoes" element={<GestorRoute><Configuracoes /></GestorRoute>} />
         <Route path="equipe" element={<GestorRoute><Equipe /></GestorRoute>} />
         <Route path="equipe/:id" element={<GestorRoute><CorretorPerfil /></GestorRoute>} />

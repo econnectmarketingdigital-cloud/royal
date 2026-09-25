@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { HiHome, HiViewBoards, HiUserGroup, HiOfficeBuilding, HiCog, HiLogout, HiPlus } from 'react-icons/hi';
-import { FiRefreshCw, FiHelpCircle, FiAward, FiUser } from 'react-icons/fi';
+import { FiRefreshCw, FiHelpCircle, FiAward, FiUser, FiMap } from 'react-icons/fi';
 import { useAuth } from '../contexts/AuthContext';
 import OnboardingTour from './OnboardingTour';
 import api from '../services/api';
@@ -43,6 +43,7 @@ const Layout = () => {
     { to: '/leads', icon: <HiUserGroup size={24} />, label: 'Leads' },
     { to: '/ranking', icon: <FiAward size={24} />, label: 'Ranking' },
     { to: '/empreendimentos', icon: <HiOfficeBuilding size={24} />, label: 'Imóveis' },
+    { to: '/mapa', icon: <FiMap size={24} />, label: 'Mapa' },
     { to: '/perfil', icon: <FiUser size={24} />, label: 'Meu Perfil' },
   ];
 
