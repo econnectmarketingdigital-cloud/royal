@@ -10,14 +10,18 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
   const [corretorDestino, setCorretorDestino] = useState('auto');
   const [loading, setLoading] = useState(false);
   const [preview, setPreview] = useState([]);
+  const [origemSelecionada, setOrigemSelecionada] = useState('Planilha Importada');
+  const [dataEntrada, setDataEntrada] = useState(new Date().toISOString().split('T')[0]);
   const { addToast } = useToast();
 
   useEffect(() => {
     if (isOpen) {
-      api.usuarios.getEquipe().then(res => setCorretores(res || []));
+      api.usuarios.getUsuarios().then(res => setCorretores(res || [])).catch(() => {});
       setFile(null);
       setPreview([]);
       setCorretorDestino('auto');
+      setOrigemSelecionada('Planilha Importada');
+      setDataEntrada(new Date().toISOString().split('T')[0]);
     }
   }, [isOpen]);
 
@@ -73,7 +77,7 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
             const nome = row.nome || row.Nome || row.NAME || row.saved_name || Object.values(row)[0] || '';
             const telefone = String(row.telefone || row.Telefone || row.PHONE || row.formatted_phone || row.phone_number || Object.values(row)[1] || '');
             const email = row.email || row.Email || row.EMAIL || '';
-            return { nome, telefone, email, origem: 'Planilha Importada' };
+            return { nome, telefone, email, origem: origemSelecionada, created_at: dataEntrada ? `${dataEntrada}T12:00:00Z` : undefined };
           });
 
           const result = await api.leads.importBulk({ leads: mapped, corretorId: corretorDestino });
@@ -135,8 +139,37 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
           </div>
         )}
 
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
+          <div>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>2. Origem / Canal</label>
+            <select 
+              className="input" 
+              value={origemSelecionada} 
+              onChange={(e) => setOrigemSelecionada(e.target.value)}
+              style={{ width: '100%' }}
+            >
+              <option value="Planilha Importada">Planilha Importada (Padrão)</option>
+              <option value="Meta Ads">Meta Ads (Facebook/Instagram)</option>
+              <option value="Google Ads">Google Ads</option>
+              <option value="Indicação">Indicação</option>
+              <option value="Base Pessoal">Base Pessoal</option>
+              <option value="Ação Externa">Ação Externa</option>
+            </select>
+          </div>
+          <div>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>3. Data de Entrada</label>
+            <input 
+              type="date" 
+              className="input" 
+              value={dataEntrada}
+              onChange={(e) => setDataEntrada(e.target.value)}
+              style={{ width: '100%' }}
+            />
+          </div>
+        </div>
+
         <div style={{ marginBottom: '2rem' }}>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>2. Distribuição de Corretores</label>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>4. Distribuição de Corretores</label>
           <select 
             className="input" 
             value={corretorDestino} 

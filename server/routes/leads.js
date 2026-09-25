@@ -117,9 +117,9 @@ router.post('/bulk', authenticateToken, async (req, res) => {
     const errors = [];
 
     for (const lead of leads) {
-      const { nome, telefone, email, origem = 'Planilha Importada' } = lead;
+      const { nome, telefone, email, origem = 'Planilha Importada', created_at } = lead;
       
-      const cleanTelefone = telefone ? telefone.trim() : '';
+      const cleanTelefone = telefone ? String(telefone).trim() : '';
       if (!cleanTelefone) {
         errors.push(`Lead ${nome || 'sem nome'} ignorado: sem telefone`);
         continue;
@@ -142,16 +142,20 @@ router.post('/bulk', authenticateToken, async (req, res) => {
         finalCorretorId = corretorId || req.user.id;
       }
 
+      const createdAtVal = created_at ? new Date(created_at).toISOString() : new Date().toISOString();
+
       await db.execute(`
-        INSERT INTO leads (id, nome, telefone, email, origem, corretor_id)
-        VALUES (?, ?, ?, ?, ?, ?)
+        INSERT INTO leads (id, nome, telefone, email, origem, corretor_id, created_at, ultimo_contato)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
       `, [
         id, 
         (nome || 'Sem Nome').trim(), 
         cleanTelefone, 
-        email ? email.trim() : null, 
+        email ? String(email).trim() : null, 
         origem, 
-        finalCorretorId
+        finalCorretorId,
+        createdAtVal,
+        createdAtVal
       ]);
 
       await db.execute(
