@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiUserPlus, FiUser, FiPower, FiTrash2 } from 'react-icons/fi';
+import { FiUserPlus, FiUser, FiPower, FiTrash2, FiSettings } from 'react-icons/fi';
 import api from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from '../contexts/ToastContext';
+import ModalGerenciarCorretor from '../components/ModalGerenciarCorretor';
 
 export default function Equipe() {
   const [usuarios, setUsuarios] = useState([]);
@@ -14,6 +15,7 @@ export default function Equipe() {
   const navigate = useNavigate();
   
   const [novoCorretor, setNovoCorretor] = useState({ nome: '', email: '', senha: '', role: 'corretor' });
+  const [gerenciarCorretor, setGerenciarCorretor] = useState(null);
 
   useEffect(() => {
     fetchUsuarios();
@@ -61,18 +63,6 @@ export default function Equipe() {
       addToast(err.message || 'Erro ao adicionar membro de equipe', 'error');
     } finally {
       setSubmitting(false);
-    }
-  };
-
-  const handleExcluir = async (id, nome) => {
-    if (window.confirm(`Tem certeza que deseja EXCLUIR DEFINITIVAMENTE o usuário ${nome}?`)) {
-      try {
-        await api.usuarios.deleteUsuario(id);
-        addToast('Usuário excluído com sucesso.', 'success');
-        fetchUsuarios();
-      } catch (err) {
-        addToast(err.message || 'Erro ao excluir usuário', 'error');
-      }
     }
   };
 
@@ -218,11 +208,11 @@ export default function Equipe() {
                               {u.ativo ? 'Desativar' : 'Reativar'}
                             </button>
                             <button
-                              onClick={() => handleExcluir(u.id, u.nome)}
+                              onClick={() => setGerenciarCorretor(u)}
                               className="btn btn-secondary"
-                              style={{ padding: '6px 12px', fontSize: '0.8rem', color: '#F43F5E', border: '1px solid rgba(244,63,94,0.3)' }}
+                              style={{ padding: '6px 12px', fontSize: '0.8rem', color: '#c49653', border: '1px solid rgba(196,150,83,0.3)', display: 'flex', alignItems: 'center', gap: '4px' }}
                             >
-                              Excluir
+                              <FiSettings /> Gerenciar
                             </button>
                           </>
                         )}
@@ -242,6 +232,14 @@ export default function Equipe() {
           </table>
         </div>
       </div>
+
+      <ModalGerenciarCorretor 
+        isOpen={!!gerenciarCorretor} 
+        onClose={() => setGerenciarCorretor(null)} 
+        corretor={gerenciarCorretor} 
+        todosCorretores={usuarios} 
+        onSuccess={fetchUsuarios} 
+      />
     </div>
   );
 }

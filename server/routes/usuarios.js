@@ -1,4 +1,5 @@
 import express from 'express';
+import bcrypt from 'bcryptjs';
 import { getDb } from '../database.js';
 import { authenticateToken, requireRole } from '../middleware/auth.js';
 
@@ -52,9 +53,37 @@ router.put('/:id/ativo', authenticateToken, requireRole('gestor'), async (req, r
   }
 });
 
+router.put('/:id/credentials', authenticateToken, requireRole('gestor'), async (req, res) => {
+  const db = getDb();
+  const { email, password } = req.body;
+  try {
+    if (email) {
+      await db.execute('UPDATE usuarios SET email = ? WHERE id = ?', [email, req.params.id]);
+    }
+    if (password) {
+      const hashedPassword = await bcrypt.hash(password, 10);
+      await db.execute('UPDATE usuarios SET password_hash = ? WHERE id = ?', [hashedPassword, req.params.id]);
+    }
+    res.json({ success: true, data: 'Credenciais atualizadas com sucesso' });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 router.delete('/:id', authenticateToken, requireRole('gestor'), async (req, res) => {
   const db = getDb();
   try {
+    const { transferTo } = req.query;
+    if (transferTo) {
+      await db.execute('UPDATE leads SET corretor_id = ? WHERE corretor_id = ?', [transferTo, req.params.id]);
+      await db.execute('UPDATE propostas SET corretor_id = ? WHERE corretor_id = ?', [transferTo, req.params.id]);
+      await db.execute('UPDATE reservas SET corretor_id = ? WHERE corretor_id = ?', [transferTo, req.params.id]);
+    } else {
+      await db.execute('UPDATE leads SET corretor_id = NULL WHERE corretor_id = ?', [req.params.id]);
+      await db.execute('UPDATE propostas SET corretor_id = NULL WHERE corretor_id = ?', [req.params.id]);
+      await db.execute('UPDATE reservas SET corretor_id = NULL WHERE corretor_id = ?', [req.params.id]);
+    }
+    await db.execute('DELETE FROM lead_historico WHERE usuario_id = ? OR corretor_id = ?', [req.params.id, req.params.id]);
     await db.execute('DELETE FROM usuarios WHERE id = ?', [req.params.id]);
     res.json({ success: true, data: 'Usuário excluído' });
   } catch (error) {

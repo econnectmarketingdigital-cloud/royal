@@ -103,7 +103,8 @@ export default {
     getUsuario: (id) => fetchWithAuth(`/usuarios/${id}`),
     updateUsuario: (id, data) => fetchWithAuth(`/usuarios/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
     toggleUsuarioAtivo: (id, data) => fetchWithAuth(`/usuarios/${id}/ativo`, { method: 'PUT', body: JSON.stringify(data) }),
-    deleteUsuario: (id) => fetchWithAuth(`/usuarios/${id}`, { method: 'DELETE' }),
+    updateUsuarioCredentials: (id, data) => fetchWithAuth(`/usuarios/${id}/credentials`, { method: 'PUT', body: JSON.stringify(data) }),
+    deleteUsuario: (id, transferTo) => fetchWithAuth(`/usuarios/${id}${transferTo ? `?transferTo=${transferTo}` : ''}`, { method: 'DELETE' }),
   },
   webhooks: {
     simulateWebhook: (data) => fetchWithAuth('/webhooks/simulate', { method: 'POST', body: JSON.stringify(data) }),
