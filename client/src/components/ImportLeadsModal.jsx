@@ -102,12 +102,12 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
 
   return (
     <div className={`modal-overlay ${isOpen ? 'open' : ''}`} style={{ zIndex: 9999 }}>
-      <div className={`modal-content ${isOpen ? 'open' : ''}`} style={{ maxWidth: '600px' }}>
-        <button className="modal-close" onClick={onClose}><FiX /></button>
-        <h2 style={{ marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Importar Planilha de Leads</h2>
+      <div className={`modal-content ${isOpen ? 'open' : ''}`} style={{ maxWidth: '600px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <button className="modal-close" onClick={onClose} style={{ top: '15px', right: '15px' }}><FiX /></button>
+        <h2 className="font-heading" style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.75rem' }}>Importar Planilha de Leads</h2>
         
-        <div style={{ marginBottom: '1.5rem' }}>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>1. Selecione o Arquivo (.xlsx, .csv)</label>
+        <div>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>1. Selecione o Arquivo (.xlsx, .csv)</label>
           <div style={{ padding: '20px', border: '2px dashed var(--color-border)', borderRadius: '8px', textAlign: 'center' }}>
             <input type="file" id="fileUpload" accept=".xlsx, .xls, .csv" onChange={handleFileUpload} style={{ display: 'none' }} />
             <label htmlFor="fileUpload" style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -118,8 +118,8 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
         </div>
 
         {preview.length > 0 && (
-          <div style={{ marginBottom: '1.5rem', background: 'var(--color-surface)', padding: '10px', borderRadius: '8px' }}>
-            <h4 style={{ margin: '0 0 10px 0', fontSize: '14px', color: 'var(--color-text-secondary)' }}>Pré-visualização (5 primeiros)</h4>
+          <div style={{ background: 'var(--color-surface)', padding: '15px', borderRadius: '8px', border: '1px solid var(--color-border)' }}>
+            <h4 style={{ margin: '0 0 10px 0', fontSize: '13px', color: 'var(--color-text-secondary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Pré-visualização (5 primeiros)</h4>
             <table style={{ width: '100%', fontSize: '13px', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
@@ -139,9 +139,9 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
           </div>
         )}
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>2. Origem / Canal</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>2. Origem / Canal</label>
             <select 
               className="input" 
               value={origemSelecionada} 
@@ -157,7 +157,7 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
             </select>
           </div>
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>3. Data de Entrada</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>3. Data de Entrada</label>
             <input 
               type="date" 
               className="input" 
@@ -168,8 +168,8 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
           </div>
         </div>
 
-        <div style={{ marginBottom: '2rem' }}>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 'bold' }}>4. Distribuição de Corretores</label>
+        <div>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600, fontSize: '0.9rem', color: 'var(--color-text)' }}>4. Distribuição de Corretores</label>
           <select 
             className="input" 
             value={corretorDestino} 
@@ -183,7 +183,7 @@ export default function ImportLeadsModal({ isOpen, onClose, onImportSuccess }) {
           </select>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '1rem', borderTop: '1px solid var(--color-border)', paddingTop: '1.5rem' }}>
           <button className="btn-secondary" onClick={onClose} disabled={loading}>Cancelar</button>
           <button className="btn-primary" onClick={handleImport} disabled={!file || loading}>
             {loading ? 'Importando...' : <><FiCheckCircle style={{ marginRight: '8px' }} /> Importar Leads</>}
