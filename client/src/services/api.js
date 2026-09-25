@@ -57,6 +57,7 @@ export default {
     getHistorico: (id) => fetchWithAuth(`/leads/${id}/historico`),
     deleteLead: (id) => fetchWithAuth(`/leads/${id}`, { method: 'DELETE' }),
     clearAllLeads: () => fetchWithAuth('/leads/clear-all', { method: 'POST' }),
+    vendaManual: (data) => fetchWithAuth('/leads/venda-manual', { method: 'POST', body: JSON.stringify(data) })
   },
   empreendimentos: {
     getEmpreendimentos: () => fetchWithAuth('/empreendimentos'),
@@ -78,6 +79,7 @@ export default {
   dashboard: {
     getDashboardCorretor: () => fetchWithAuth('/dashboard/corretor'),
     getDashboardGestor: () => fetchWithAuth('/dashboard/gestor'),
+    getRanking: (periodo, tipo) => fetchWithAuth(`/dashboard/ranking?periodo=${periodo}&tipo=${tipo}`),
     getCorretorPerformance: (id) => fetchWithAuth(`/dashboard/corretor/${id}/performance`),
   },
   rodizio: {

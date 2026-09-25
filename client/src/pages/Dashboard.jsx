@@ -3,7 +3,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { useToast } from '../contexts/ToastContext';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
-import { FiAlertCircle, FiTrendingUp, FiAward, FiClock, FiChevronRight } from 'react-icons/fi';
+import { FiAlertCircle, FiTrendingUp, FiAward, FiClock, FiChevronRight, FiPlus } from 'react-icons/fi';
+import ModalVendaManual from '../components/ModalVendaManual';
 
 const etapaLabels = {
   novo: 'Novo',
@@ -21,18 +22,21 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showVendaModal, setShowVendaModal] = useState(false);
+
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      const res = await api.dashboard.getDashboardCorretor();
+      setData(res);
+    } catch (err) {
+      addToast(err.message || 'Erro ao carregar dashboard', 'error');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await api.dashboard.getDashboardCorretor();
-        setData(res);
-      } catch (err) {
-        addToast(err.message || 'Erro ao carregar dashboard', 'error');
-      } finally {
-        setLoading(false);
-      }
-    };
     fetchData();
   }, []);
 
@@ -55,14 +59,24 @@ const Dashboard = () => {
         backgroundImage: 'radial-gradient(rgba(196, 150, 83,0.1) 1px, transparent 1px)', backgroundSize: '30px 30px', opacity: 0.6
       }} />
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '15px' }}>
         <div>
           <h1 className="font-heading" style={{ fontSize: '2.5rem', margin: 0, fontWeight: 800, letterSpacing: '-0.5px' }}>
-            Olá, <span style={{ color: 'transparent', backgroundImage: 'linear-gradient(90deg, #c49653, #fff4c9)', WebkitBackgroundClip: 'text' }}>{user?.nome?.split(' ')[0] || 'Corretor'}</span>
+            Olá, <span style={{ color: 'var(--color-primary)' }}>{user?.nome?.split(' ')[0] || 'Corretor'}</span>
           </h1>
-          <p style={{ color: 'var(--color-text-secondary)', margin: '0.5rem 0 0 0', fontSize: '1rem' }}>Aqui está o resumo da sua performance.</p>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0.5rem 0 0 0', fontSize: '1.1rem' }}>
+            Aqui está o resumo do seu desempenho.
+          </p>
         </div>
+        <button 
+          onClick={() => setShowVendaModal(true)}
+          className="btn"
+          style={{ background: 'linear-gradient(135deg, #c49653, #fff4c9)', color: '#061912', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}
+        >
+          <FiPlus /> Registro Manual de Venda
+        </button>
       </div>
+
       
       <style>{`
         .glass-card-override {
@@ -229,6 +243,13 @@ const Dashboard = () => {
           </table>
         </div>
       </div>
+
+      
+      <ModalVendaManual 
+        isOpen={showVendaModal} 
+        onClose={() => setShowVendaModal(false)} 
+        onSuccess={fetchData} 
+      />
     </div>
   );
 };

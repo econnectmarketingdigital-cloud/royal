@@ -312,6 +312,53 @@ const fecharVendaHandler = async (req, res) => {
   }
 };
 
+const vendaManualHandler = async (req, res) => {
+  const db = getDb();
+  try {
+    const { cliente_nome, telefone, corretor_id, empreendimento_id, valor_venda, data_venda } = req.body;
+    
+    if (!cliente_nome || !corretor_id || !valor_venda || !data_venda) {
+      return res.status(400).json({ success: false, error: 'Campos obrigatórios: Cliente, Corretor, Valor e Data' });
+    }
+
+    const cleanEmpId = empreendimento_id && String(empreendimento_id).trim() !== '' ? empreendimento_id : null;
+    const cleanValor = parseFloat(valor_venda) || 0;
+    const dataIso = new Date(data_venda).toISOString();
+
+    const leadId = uuidv4();
+    await db.execute(
+      `INSERT INTO leads (id, nome, telefone, email, origem, etapa, corretor_id, empreendimento_id, created_at, ultimo_contato)
+       VALUES (?, ?, ?, '', 'manual', 'fechado', ?, ?, ?, ?)`,
+      [leadId, cliente_nome, telefone || '', corretor_id, cleanEmpId, dataIso, dataIso]
+    );
+
+    const unidadeId = uuidv4();
+    await db.execute(
+      `INSERT INTO unidades (id, empreendimento_id, numero, valor, status) VALUES (?, ?, 'Venda Antiga', ?, 'vendido')`, 
+      [unidadeId, cleanEmpId, cleanValor]
+    );
+
+    const propostaId = uuidv4();
+    await db.execute(
+      `INSERT INTO propostas (id, lead_id, unidade_id, corretor_id, valor_venda, status, data_proposta, data_fechamento) 
+       VALUES (?, ?, ?, ?, ?, 'aprovada', ?, ?)`, 
+      [propostaId, leadId, unidadeId, corretor_id, cleanValor, dataIso, dataIso]
+    );
+
+    await db.execute(
+      `INSERT INTO lead_historico (id, lead_id, corretor_id, tipo, descricao, created_at) 
+       VALUES (?, ?, ?, 'sistema', 'Venda antiga registrada retroativamente: R$ ${cleanValor}', ?)`, 
+      [uuidv4(), leadId, req.user.id, dataIso]
+    );
+
+    res.json({ success: true, data: 'Venda manual registrada com sucesso' });
+  } catch (error) {
+    console.error('Venda manual error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+};
+
+router.post('/venda-manual', authenticateToken, vendaManualHandler);
 router.post('/:id/venda', authenticateToken, fecharVendaHandler);
 router.post('/:id/fechar_venda', authenticateToken, fecharVendaHandler);
 

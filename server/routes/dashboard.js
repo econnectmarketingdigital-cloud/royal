@@ -67,6 +67,43 @@ router.get('/gestor', authenticateToken, requireRole('gestor'), async (req, res)
   }
 });
 
+router.get('/ranking', authenticateToken, async (req, res) => {
+  const db = getDb();
+  try {
+    const { periodo = 'mes', tipo = 'vgv' } = req.query;
+    
+    let dateFilter = '';
+    if (periodo === 'mes') {
+      dateFilter = "AND EXTRACT(MONTH FROM p.data_fechamento) = EXTRACT(MONTH FROM CURRENT_DATE) AND EXTRACT(YEAR FROM p.data_fechamento) = EXTRACT(YEAR FROM CURRENT_DATE)";
+    } else if (periodo === 'semestre') {
+      dateFilter = "AND p.data_fechamento >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '5 months'";
+    } else if (periodo === 'ano') {
+      dateFilter = "AND EXTRACT(YEAR FROM p.data_fechamento) = EXTRACT(YEAR FROM CURRENT_DATE)";
+    } // 'geral' -> no filter
+
+    let selectQuery = "";
+    if (tipo === 'pastas') {
+      selectQuery = `COUNT(p.id) as score`;
+    } else {
+      selectQuery = `SUM(p.valor_venda) as score`;
+    }
+
+    const query = `
+      SELECT u.id as corretor_id, u.nome, u.avatar_url, ${selectQuery} 
+      FROM usuarios u
+      LEFT JOIN propostas p ON p.corretor_id = u.id AND p.status = 'aprovada' ${dateFilter}
+      WHERE u.role = 'corretor' AND u.ativo = 1
+      GROUP BY u.id, u.nome, u.avatar_url 
+      ORDER BY score DESC NULLS LAST
+    `;
+
+    const ranking = await db.query(query);
+    res.json({ success: true, data: ranking });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 router.get('/corretor/:id/performance', authenticateToken, requireRole('gestor'), async (req, res) => {
   const db = getDb();
   const corretorId = req.params.id;
