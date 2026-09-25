@@ -104,6 +104,71 @@ router.post('/', authenticateToken, async (req, res) => {
   }
 });
 
+router.post('/bulk', authenticateToken, async (req, res) => {
+  const db = getDb();
+  try {
+    const { leads, corretorId } = req.body;
+    
+    if (!leads || !Array.isArray(leads) || leads.length === 0) {
+      return res.status(400).json({ success: false, error: 'Lista de leads vazia ou inválida' });
+    }
+
+    let count = 0;
+    const errors = [];
+
+    for (const lead of leads) {
+      const { nome, telefone, email, origem = 'Planilha Importada' } = lead;
+      
+      const cleanTelefone = telefone ? telefone.trim() : '';
+      if (!cleanTelefone) {
+        errors.push(`Lead ${nome || 'sem nome'} ignorado: sem telefone`);
+        continue;
+      }
+
+      // Evitar duplicados simples
+      const existing = await findExistingLead(cleanTelefone, null);
+      if (existing) {
+        errors.push(`Lead ${nome} ignorado: telefone já existe`);
+        continue;
+      }
+
+      const id = uuidv4();
+      
+      // Se corretorId for 'auto', distribui via round-robin, senao usa o passado (ou fallback manual)
+      let finalCorretorId = null;
+      if (corretorId === 'auto') {
+        finalCorretorId = await getNextCorretor(origem);
+      } else {
+        finalCorretorId = corretorId || req.user.id;
+      }
+
+      await db.execute(`
+        INSERT INTO leads (id, nome, telefone, email, origem, corretor_id)
+        VALUES (?, ?, ?, ?, ?, ?)
+      `, [
+        id, 
+        (nome || 'Sem Nome').trim(), 
+        cleanTelefone, 
+        email ? email.trim() : null, 
+        origem, 
+        finalCorretorId
+      ]);
+
+      await db.execute(
+        `INSERT INTO lead_historico (id, lead_id, corretor_id, tipo, descricao) VALUES (?, ?, ?, 'criacao', 'Lead importado em massa')`,
+        [uuidv4(), id, finalCorretorId]
+      );
+      
+      count++;
+    }
+
+    res.json({ success: true, count, errors });
+  } catch (error) {
+    console.error('Bulk import error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 router.get('/:id', authenticateToken, async (req, res) => {
   const db = getDb();
   try {

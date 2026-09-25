@@ -3,7 +3,8 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import api from '../services/api';
 import { useToast } from '../contexts/ToastContext';
 import { useAuth } from '../contexts/AuthContext';
-import { FiPlus, FiSearch, FiFilter } from 'react-icons/fi';
+import { FiPlus, FiSearch, FiFilter, FiUploadCloud } from 'react-icons/fi';
+import ImportLeadsModal from '../components/ImportLeadsModal';
 
 const getEtapaColor = (etapa) => {
   const colors = {
@@ -54,6 +55,7 @@ export default function Leads() {
   const [leads, setLeads] = useState([]);
   const [corretores, setCorretores] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isImportModalOpen, setIsImportModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [etapaFilter, setEtapaFilter] = useState(searchParams.get('etapa') || '');
   const [origemFilter, setOrigemFilter] = useState('');
@@ -145,17 +147,32 @@ export default function Leads() {
     <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '10px' }}>
         <h1 style={{ margin: 0, color: 'var(--color-text)' }}>Leads</h1>
-        <button 
-          onClick={() => navigate('/leads/novo')}
-          style={{
-            display: 'flex', alignItems: 'center', gap: '8px',
-            backgroundColor: 'var(--color-primary, #007bff)', color: '#fff',
-            border: 'none', padding: '10px 16px', borderRadius: '4px', cursor: 'pointer',
-            fontWeight: 'bold'
-          }}
-        >
-          <FiPlus /> Novo Lead
-        </button>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          {isGestor && (
+            <button 
+              onClick={() => setIsImportModalOpen(true)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '8px',
+                backgroundColor: 'var(--color-surface-hover)', color: 'var(--color-text)',
+                border: '1px solid var(--color-border)', padding: '10px 16px', borderRadius: '4px', cursor: 'pointer',
+                fontWeight: 'bold'
+              }}
+            >
+              <FiUploadCloud /> Importar
+            </button>
+          )}
+          <button 
+            onClick={() => navigate('/leads/novo')}
+            style={{
+              display: 'flex', alignItems: 'center', gap: '8px',
+              backgroundColor: 'var(--color-primary, #007bff)', color: '#fff',
+              border: 'none', padding: '10px 16px', borderRadius: '4px', cursor: 'pointer',
+              fontWeight: 'bold'
+            }}
+          >
+            <FiPlus /> Novo Lead
+          </button>
+        </div>
       </div>
 
       <div style={{ display: 'flex', gap: '15px', marginBottom: '20px', flexWrap: 'wrap' }}>
@@ -304,6 +321,15 @@ export default function Leads() {
           </div>
         </div>
       )}
+
+      <ImportLeadsModal 
+        isOpen={isImportModalOpen} 
+        onClose={() => setIsImportModalOpen(false)} 
+        onImportSuccess={() => {
+          setIsImportModalOpen(false);
+          fetchLeads();
+        }} 
+      />
     </div>
   );
 }

@@ -48,6 +48,7 @@ export default {
     },
     getLead: (id) => fetchWithAuth(`/leads/${id}`),
     createLead: (data) => fetchWithAuth('/leads', { method: 'POST', body: JSON.stringify(data) }),
+    importBulk: (data) => fetchWithAuth('/leads/bulk', { method: 'POST', body: JSON.stringify(data) }),
     updateLead: (id, data) => fetchWithAuth(`/leads/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
     transferirLead: (id, corretor_id) => fetchWithAuth(`/leads/${id}/corretor`, { method: 'PUT', body: JSON.stringify({ corretor_id }) }),
     moveLeadEtapa: (id, etapa, motivo) => fetchWithAuth(`/leads/${id}/etapa`, { method: 'PUT', body: JSON.stringify({ etapa, perdido_motivo: motivo }) }),
