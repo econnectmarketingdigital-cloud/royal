@@ -72,14 +72,17 @@ router.get('/ranking', authenticateToken, async (req, res) => {
   try {
     const { periodo = 'mes', tipo = 'vgv' } = req.query;
     
+    let dateColumn = tipo === 'pastas' ? 'p.data_proposta' : 'p.data_fechamento';
+    let statusFilter = tipo === 'pastas' ? "p.status IN ('em_analise', 'aprovada')" : "p.status = 'aprovada'";
+
     let dateFilter = '';
     if (periodo === 'mes') {
-      dateFilter = "AND EXTRACT(MONTH FROM p.data_fechamento) = EXTRACT(MONTH FROM CURRENT_DATE) AND EXTRACT(YEAR FROM p.data_fechamento) = EXTRACT(YEAR FROM CURRENT_DATE)";
+      dateFilter = `AND EXTRACT(MONTH FROM ${dateColumn}) = EXTRACT(MONTH FROM CURRENT_DATE) AND EXTRACT(YEAR FROM ${dateColumn}) = EXTRACT(YEAR FROM CURRENT_DATE)`;
     } else if (periodo === 'semestre') {
-      dateFilter = "AND p.data_fechamento >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '5 months'";
+      dateFilter = `AND ${dateColumn} >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '5 months'`;
     } else if (periodo === 'ano') {
-      dateFilter = "AND EXTRACT(YEAR FROM p.data_fechamento) = EXTRACT(YEAR FROM CURRENT_DATE)";
-    } // 'geral' -> no filter
+      dateFilter = `AND EXTRACT(YEAR FROM ${dateColumn}) = EXTRACT(YEAR FROM CURRENT_DATE)`;
+    }
 
     let selectQuery = "";
     if (tipo === 'pastas') {
@@ -91,7 +94,7 @@ router.get('/ranking', authenticateToken, async (req, res) => {
     const query = `
       SELECT u.id as corretor_id, u.nome, u.avatar_url, ${selectQuery} 
       FROM usuarios u
-      LEFT JOIN propostas p ON p.corretor_id = u.id AND p.status = 'aprovada' ${dateFilter}
+      LEFT JOIN propostas p ON p.corretor_id = u.id AND ${statusFilter} ${dateFilter}
       WHERE u.role = 'corretor' AND u.ativo = 1
       GROUP BY u.id, u.nome, u.avatar_url 
       ORDER BY score DESC NULLS LAST

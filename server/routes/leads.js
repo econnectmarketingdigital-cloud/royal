@@ -251,6 +251,16 @@ router.put('/:id/etapa', authenticateToken, async (req, res) => {
 
     await db.execute('UPDATE leads SET etapa = ?, perdido_motivo = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?', [etapa, perdido_motivo || null, req.params.id]);
     
+    if (etapa !== 'perdido' && etapa !== 'fechado') {
+      const novaEtapa = await db.queryOne('SELECT nome FROM funil_etapas WHERE id = ?', [etapa]);
+      if (novaEtapa && novaEtapa.nome.toLowerCase().includes('pasta')) {
+        const existingProposta = await db.queryOne('SELECT id FROM propostas WHERE lead_id = ?', [req.params.id]);
+        if (!existingProposta) {
+          await db.execute(`INSERT INTO propostas (id, lead_id, corretor_id, status, data_proposta) VALUES (?, ?, ?, 'em_analise', CURRENT_TIMESTAMP)`, [uuidv4(), req.params.id, lead.corretor_id || req.user.id]);
+        }
+      }
+    }
+
     await db.execute(`INSERT INTO lead_historico (id, lead_id, corretor_id, tipo, etapa_anterior, etapa_nova, descricao) VALUES (?, ?, ?, 'mudanca_etapa', ?, ?, 'Etapa alterada')`, [uuidv4(), req.params.id, req.user.id, lead.etapa, etapa]);
     
     res.json({ success: true, data: 'Etapa atualizada' });
