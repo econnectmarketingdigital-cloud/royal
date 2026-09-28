@@ -41,6 +41,10 @@ export default function Leads() {
   
   const [selectedLeads, setSelectedLeads] = useState([]);
   const [isDeletingBulk, setIsDeletingBulk] = useState(false);
+  
+  const [showBulkTransferModal, setShowBulkTransferModal] = useState(false);
+  const [bulkTransferCorretor, setBulkTransferCorretor] = useState('');
+  const [isTransferingBulk, setIsTransferingBulk] = useState(false);
 
   useEffect(() => {
     fetchData();
@@ -73,7 +77,7 @@ export default function Leads() {
     
     const matchesEtapa = etapaFilter ? lead.etapa === etapaFilter : true;
     const matchesOrigem = origemFilter ? lead.origem === origemFilter : true;
-    const matchesCorretor = corretorFilter ? lead.corretor_id === corretorFilter : true;
+    const matchesCorretor = corretorFilter ? (corretorFilter === 'null' ? !lead.corretor_id : lead.corretor_id === corretorFilter) : true;
 
     return matchesSearch && matchesEtapa && matchesOrigem && matchesCorretor;
   });
@@ -116,6 +120,27 @@ export default function Leads() {
       fetchLeads(); // refresh anyway to show updated state
     } finally {
       setIsDeletingBulk(false);
+    }
+  };
+
+  const handleBulkTransfer = async () => {
+    if (!bulkTransferCorretor) return addToast('Selecione um corretor!', 'error');
+    setIsTransferingBulk(true);
+    let successCount = 0;
+    try {
+      for (const id of selectedLeads) {
+        await api.leads.transferirLead(id, bulkTransferCorretor);
+        successCount++;
+      }
+      addToast(`${successCount} lead(s) transferido(s) com sucesso.`, 'success');
+      setShowBulkTransferModal(false);
+      setBulkTransferCorretor('');
+      fetchLeads();
+    } catch (err) {
+      addToast(`Erro ao transferir alguns leads. ${successCount} transferidos.`, 'error');
+      fetchLeads();
+    } finally {
+      setIsTransferingBulk(false);
     }
   };
 
@@ -190,6 +215,7 @@ export default function Leads() {
             style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ddd', fontWeight: 500 }}
           >
             <option value="">Todos os Corretores</option>
+            <option value="null">☁️ Sem corretor (Nuvem)</option>
             <option value={user?.id}>Meus Leads (Você)</option>
             {corretores.map(c => (
               <option key={c.id} value={c.id}>
@@ -208,6 +234,13 @@ export default function Leads() {
         }}>
           <span style={{ fontWeight: 600 }}>{selectedLeads.length} lead(s) selecionado(s)</span>
           <div style={{ flex: 1 }}></div>
+          <button 
+            onClick={() => setShowBulkTransferModal(true)}
+            className="btn btn-primary"
+            style={{ fontWeight: 600 }}
+          >
+            Transferir Selecionados
+          </button>
           <button 
             onClick={handleBulkDelete}
             disabled={isDeletingBulk}
@@ -302,6 +335,36 @@ export default function Leads() {
           fetchLeads();
         }} 
       />
+
+      {showBulkTransferModal && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, backdropFilter: 'blur(6px)' }}>
+          <div className="card" style={{ padding: '25px', width: '90%', maxWidth: '440px' }}>
+            <h3 className="font-heading" style={{ margin: '0 0 10px 0', color: '#c49653', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              Transferir {selectedLeads.length} Lead(s)
+            </h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', lineHeight: '1.5' }}>
+              Selecione o corretor que receberá os leads selecionados:
+            </p>
+            <select
+              value={bulkTransferCorretor}
+              onChange={(e) => setBulkTransferCorretor(e.target.value)}
+              className="input"
+              style={{ width: '100%', marginBottom: '1.5rem', backgroundColor: 'var(--color-background)', color: 'var(--color-text)' }}
+            >
+              <option value="">-- Selecione o Corretor --</option>
+              {corretores.map(c => (
+                <option key={c.id} value={c.id}>{c.nome}</option>
+              ))}
+            </select>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px' }}>
+              <button onClick={() => setShowBulkTransferModal(false)} className="btn btn-secondary">Cancelar</button>
+              <button onClick={handleBulkTransfer} disabled={isTransferingBulk || !bulkTransferCorretor} className="btn btn-primary" style={{ fontWeight: 'bold' }}>
+                {isTransferingBulk ? 'Transferindo...' : 'Transferir'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

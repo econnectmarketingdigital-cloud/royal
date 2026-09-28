@@ -1,0 +1,2887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>ROYAL THE🚀 EMPREENDIMENTOS</name>
+    <description/>
+    <Style id="icon-1546-097138-labelson">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1546-558B2F-labelson">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1546-F9A825-labelson">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1546-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1574-097138-normal">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1574-097138-highlight">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1574-097138">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1574-097138-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1574-097138-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-01579B-labelson">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1603-097138-labelson">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1603-558B2F-labelson">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1603-F9A825-labelson">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1603-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="poly-0288D1-1200-77-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4dd18802</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-0288D1-1200-77-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4dd18802</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-0288D1-1200-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-0288D1-1200-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-0288D1-1200-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-097138-1200-77-nodesc-normal">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d387109</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-097138-1200-77-nodesc-highlight">
+      <LineStyle>
+        <color>ff387109</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d387109</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-097138-1200-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-097138-1200-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-097138-1200-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F57C00-1200-77-nodesc-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-F57C00-1200-77-nodesc-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-1200-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-1200-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-1200-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FF5252-2485-66-nodesc-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>2.485</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>425252ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-FF5252-2485-66-nodesc-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>3.7275</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>425252ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-FF5252-2485-66-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FF5252-2485-66-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FF5252-2485-66-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FFD600-1200-77-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d00d6ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-FFD600-1200-77-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d00d6ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-FFD600-1200-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FFD600-1200-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FFD600-1200-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>ROYAL - EMPREENDIMENTOS</name>
+      <Placemark>
+        <name>VILLAGE DOS PÁSSAROS II - CANOPUS</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 230 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 100,00<br>ENTRADA EM ATE 72 VEZES<br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.300,00<br><br>COORDENADOR <br>CASSIO ABREU - 98 98800-3696<br><br>PREVISAO DE ENTREGA<br>FINAL 2027 <br><br>TIPOLOGIA - CASAS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1Z8bpPmpcAQSlnR7EEBGSB40P849bdyGU<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 230 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 100,00
+ENTRADA EM ATE 72 VEZES
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.300,00
+
+COORDENADOR 
+CASSIO ABREU - 98 98800-3696
+
+PREVISAO DE ENTREGA
+FINAL 2027 
+
+TIPOLOGIA - CASAS
+
+DRIVE
+https://drive.google.com/drive/folders/1Z8bpPmpcAQSlnR7EEBGSB40P849bdyGU
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8506111,-5.1506944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILLAGE GARDEN 2 - CANOPUS</name>
+        <description><![CDATA[description: PREVISAO DE ENTREGA<br>JUNHO DE 2027<br><br>TIPOLOGIA - APARTAMENTOS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1-WxUT3fAa7pdgob1DS4bM54Ff59aI8vX<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>PREVISAO DE ENTREGA
+JUNHO DE 2027
+
+TIPOLOGIA - APARTAMENTOS
+
+DRIVE
+https://drive.google.com/drive/folders/1-WxUT3fAa7pdgob1DS4bM54Ff59aI8vX
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7255823,-5.0347869,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRANDE RESERVA DIRCEU 1 - RIVELLO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 270 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 3.000,00<br>ENTRADA EM ATE 60 VEZES<br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 4.000,00<br><br>PREVISÃO DE ENTREGA<br>2028<br><br>TIPOLOGIA - CASAS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1qfxxbM31x9UQBJI5sq2yDpBRPBfeqXpD<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-558B2F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 270 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 3.000,00
+ENTRADA EM ATE 60 VEZES
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 4.000,00
+
+PREVISÃO DE ENTREGA
+2028
+
+TIPOLOGIA - CASAS
+
+DRIVE
+https://drive.google.com/drive/folders/1qfxxbM31x9UQBJI5sq2yDpBRPBfeqXpD
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7472686,-5.1184634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MÍO DIRCEU - RIVELLO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 214 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 3.000,00<br>ENTRADA EM ATE 60 VEZES<br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>PREVISÃO DE ENTREGA<br>2028<br><br>TIPOLOGIA - APARTAMENTO<br><br>DRIVE<br>https://drive.google.com/drive/folders/1H7E2i3pqt-aMkB2m8jmG5kKzxXzq9Nvr<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-558B2F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 214 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 3.000,00
+ENTRADA EM ATE 60 VEZES
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.000,00
+
+PREVISÃO DE ENTREGA
+2028
+
+TIPOLOGIA - APARTAMENTO
+
+DRIVE
+https://drive.google.com/drive/folders/1H7E2i3pqt-aMkB2m8jmG5kKzxXzq9Nvr
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7482977,-5.1205375,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PARADISE WAY - RIVELLO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 546 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: CONSULTAR CONDIÇÕES<br>ENTRADA EM ATE 48 VEZES<br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 7.000,00<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>TIPOLOGIA - CASAS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1Hf1wQ-BsKMWYGANaK-Ant1PY5qhMRrHr<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-558B2F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 546 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: CONSULTAR CONDIÇÕES
+ENTRADA EM ATE 48 VEZES
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 7.000,00
+
+PREVISÃO DE ENTREGA
+2026
+
+TIPOLOGIA - CASAS
+
+DRIVE
+https://drive.google.com/drive/folders/1Hf1wQ-BsKMWYGANaK-Ant1PY5qhMRrHr
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7246852,-5.0552243,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VIDA NOVA SUL - BKN CONSTRUTORA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 185 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 3.000,00<br>ENTRADA EM ATE 6 VEZES<br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>PREVISÃO DE ENTREGA<br>12 MESES<br><br>TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO<br><br>DRIVE<br>https://drive.google.com/drive/folders/1csrqD_XaIREf8-TSEk1zXGYN1GZyQLps<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 185 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 3.000,00
+ENTRADA EM ATE 6 VEZES
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.000,00
+
+PREVISÃO DE ENTREGA
+12 MESES
+
+TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO
+
+DRIVE
+https://drive.google.com/drive/folders/1csrqD_XaIREf8-TSEk1zXGYN1GZyQLps
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.774892,-5.1657304,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JOIA RESIDENCIAL - RBC CONSTRUTORA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 199 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 5.000,00<br>ENTRADA EM ATE 36 VEZES(6 A 12 PRE CHAVES E EM ATE 24X POS CHAVE)<br>SEM RISCO(SO POS CHAVE EM NO MAX R$ 12.500,00)<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>PREVISÃO DE ENTREGA<br>Pronta Entrega a 3 meses<br><br>TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/1Ucr-TXE2fBiDQSGGmN-jNURDDyQpPpTE<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-01579B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 199 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 5.000,00
+ENTRADA EM ATE 36 VEZES(6 A 12 PRE CHAVES E EM ATE 24X POS CHAVE)
+SEM RISCO(SO POS CHAVE EM NO MAX R$ 12.500,00)
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.000,00
+
+PREVISÃO DE ENTREGA
+Pronta Entrega a 3 meses
+
+TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/1Ucr-TXE2fBiDQSGGmN-jNURDDyQpPpTE
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8356656,-5.1451495,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ODETE NUNES - FR CONSTRUTORA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 160 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 2.000,00<br>ENTRADA EM ATE 18 VEZES<br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 1.800,00<br><br>COORDENADOR<br>LUDMILLA - 86 98130-8519<br><br>PREVISÃO DE ENTREGA<br>12 MESES<br><br>TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO<br><br>DRIVE<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 160 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 2.000,00
+ENTRADA EM ATE 18 VEZES
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 1.800,00
+
+COORDENADOR
+LUDMILLA - 86 98130-8519
+
+PREVISÃO DE ENTREGA
+12 MESES
+
+TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO
+
+DRIVE
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7307372,-5.2036068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PINHEIRO PARK - MACEDO FORTES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 239 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 10.000,00<br>ENTRADA A VERIFICAR PARCELAMENTO<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 4.000,00<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1BZdROJbFj1uUIj5Di5rc-LulV1p6wXBG<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 239 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 10.000,00
+ENTRADA A VERIFICAR PARCELAMENTO
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 4.000,00
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1BZdROJbFj1uUIj5Di5rc-LulV1p6wXBG
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7516516,-5.1315817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NICANOR PARK PRIME - MACEDO FORTES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 242 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 7.500,00<br>ENTRADA A VERIFICAR PARCELAMENTO<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 4.000,00<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1MthI88n4NNRlhf54jt1zxft6jYzT7AKr<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 242 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 7.500,00
+ENTRADA A VERIFICAR PARCELAMENTO
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 4.000,00
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1MthI88n4NNRlhf54jt1zxft6jYzT7AKr
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7270341,-5.0356201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NEO TIRADENTES - MACEDO FORTES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 260 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 16.000,00<br>ENTRADA A VERIFICAR PARCELAMENTO<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 5.000,00<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1VMKvn3zYrjikkokz6EhBFqRgSt4JQRge<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 260 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 16.000,00
+ENTRADA A VERIFICAR PARCELAMENTO
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 5.000,00
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1VMKvn3zYrjikkokz6EhBFqRgSt4JQRge
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7697389,-5.0457374,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA ZION - MACEDO FORTES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 690 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 43.000,00<br>ENTRADA A VERIFICAR PARCELAMENTO<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 10.000,00<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1ejvkWGiU7qf1Sk5bHoQmbV8eYXKIZg26<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 690 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 43.000,00
+ENTRADA A VERIFICAR PARCELAMENTO
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 10.000,00
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1ejvkWGiU7qf1Sk5bHoQmbV8eYXKIZg26
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7590137,-5.0317392,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AYRES PARK PRIME - MACEDO FORTES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 240 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 7.000,00<br>ENTRADA A VERIFICAR PARCELAMENTO<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1FVO0TuvqOhHcBrWrm3Q9v0HHNpGgt2mi<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 240 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 7.000,00
+ENTRADA A VERIFICAR PARCELAMENTO
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 3.000,00
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1FVO0TuvqOhHcBrWrm3Q9v0HHNpGgt2mi
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7475989,-5.1358046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PARQUE DOS DIAMANTES - MRV</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 223 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 5.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CONSULTAR CONDIÇÃO COMERCIAL DO MÊS<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>PREVISÃO DE ENTREGA<br>2027<br><br>DRIVE<br>https://drive.google.com/drive/folders/1P0aPfshjQIaTjAHCuEaaKkDRZ4B6B34j<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 223 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 5.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CONSULTAR CONDIÇÃO COMERCIAL DO MÊS
+
+RENDA A PARTIR DE R$ 3.000,00
+
+PREVISÃO DE ENTREGA
+2027
+
+DRIVE
+https://drive.google.com/drive/folders/1P0aPfshjQIaTjAHCuEaaKkDRZ4B6B34j
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7939543,-5.1463617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA AMETISTA - MRV</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 247 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 4.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>COORDENADOR<br>FELIPE - 86 9900-7725<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1aC59rnYm3cCdwFy6TTG5JGzyWjtjfgWi<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 247 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 4.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 3.000,00
+
+COORDENADOR
+FELIPE - 86 9900-7725
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1aC59rnYm3cCdwFy6TTG5JGzyWjtjfgWi
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7467556,-5.0801514,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESIDENCIAL CONQUISTA - MRV</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 212 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 5.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CONSULTAR CONDIÇÃO COMERCIAL DO MÊS<br><br>RENDA A PARTIR DE R$ 2.300,00<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1quxNYkf36bnqsQ-re9rEWG74OSXbfau3<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 212 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 5.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CONSULTAR CONDIÇÃO COMERCIAL DO MÊS
+
+RENDA A PARTIR DE R$ 2.300,00
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1quxNYkf36bnqsQ-re9rEWG74OSXbfau3
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7291916,-5.0866188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TERRAZZO OITI - MRV</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 200 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 5.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1TirTrRNbwLyz89fvU0KjLwzYWvYARpR3<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 200 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 5.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 2.000,00
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1TirTrRNbwLyz89fvU0KjLwzYWvYARpR3
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7427328,-5.0707565,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GRAND TOPÁZIO - MRV</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 400 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 10.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - VERIFICAR CONDIÇÃO DO MÊS<br><br>RENDA A PARTIR DE R$ 8.000,00<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1RgIK9n18_KVL3Fn21coj-_GDmnnOPBNi<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 400 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 10.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - VERIFICAR CONDIÇÃO DO MÊS
+
+RENDA A PARTIR DE R$ 8.000,00
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1RgIK9n18_KVL3Fn21coj-_GDmnnOPBNi
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7705438,-5.0743251,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SOLAR DOS IPÊS - TRIUNFO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 235 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 500,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1-5DSY93TBZfTuqi5TYJtXLhp7bHBBHJK<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 235 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 500,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 3.000,00
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1-5DSY93TBZfTuqi5TYJtXLhp7bHBBHJK
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7197124,-5.0976123,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ANGELLUS - TRIUNFO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 285 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 30.000,00<br>ENTRADA EM ATE 20X<br><br>PRONTO PRA MORAR<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 6.000,00<br><br>TIPOLOGIA - APARTAMENTOS<br><br>DRIVE<br>https://drive.google.com/drive/folders/129Yn4pfsP8wApJANsmWz6S7YWyURWKOR<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 285 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 30.000,00
+ENTRADA EM ATE 20X
+
+PRONTO PRA MORAR
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 6.000,00
+
+TIPOLOGIA - APARTAMENTOS
+
+DRIVE
+https://drive.google.com/drive/folders/129Yn4pfsP8wApJANsmWz6S7YWyURWKOR
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7685402,-5.0202535,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SAFIRA CLUB RESIDENCE - SEMOG</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 230 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 5 MIL<br>ENTRADA EM ATE 86X<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>PREVISÃO DE ENTREGA<br>6 A 12 MESES<br><br>TIPOLOGIA - CASAS<br><br>DRIVE<br>https://drive.google.com/drive/mobile/folders/1FgzjqSAPdhUnQSCQPp1YtVGVGecxqI3N<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 230 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 5 MIL
+ENTRADA EM ATE 86X
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 3.000,00
+
+PREVISÃO DE ENTREGA
+6 A 12 MESES
+
+TIPOLOGIA - CASAS
+
+DRIVE
+https://drive.google.com/drive/mobile/folders/1FgzjqSAPdhUnQSCQPp1YtVGVGecxqI3N
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.717755,-5.1152316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RECANTO DO JOIA RESIDENCE - SEMOG</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 180 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 2 MIL<br>ENTRADA EM ATE A ENTREGA(POS CHAVE ATE 5 MIL EM 36X)<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>COORDENADOR<br>STEFANNE - 99 99134-8899<br><br>PREVISÃO DE ENTREGA<br>6 A 12 MESES<br><br>TIPOLOGIA - CASAS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1FgzjqSAPdhUnQSCQPp1YtVGVGecxqI3N<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 180 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 2 MIL
+ENTRADA EM ATE A ENTREGA(POS CHAVE ATE 5 MIL EM 36X)
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 3.000,00
+
+COORDENADOR
+STEFANNE - 99 99134-8899
+
+PREVISÃO DE ENTREGA
+6 A 12 MESES
+
+TIPOLOGIA - CASAS
+
+DRIVE
+https://drive.google.com/drive/folders/1FgzjqSAPdhUnQSCQPp1YtVGVGecxqI3N
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.847503,-5.143917,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ALTO BELO LESTE - BETEL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 290 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 10 MIL<br>ENTRADA EM ATE 12X A 36X<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 4.000,00<br><br>COORDENADOR<br>BETEL - 86 99981-9040<br><br>UNIDADES A PRONTA ENTREGA<br><br>TIPOLOGIA - APARTAMENTO<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/14TAN6M2OxUHCTBIy7NvcGh9Q0iPwCBGB<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 290 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 10 MIL
+ENTRADA EM ATE 12X A 36X
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 4.000,00
+
+COORDENADOR
+BETEL - 86 99981-9040
+
+UNIDADES A PRONTA ENTREGA
+
+TIPOLOGIA - APARTAMENTO
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/14TAN6M2OxUHCTBIy7NvcGh9Q0iPwCBGB
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7761669,-5.0223143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ALTOS VILLAGE - CONSTENG</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 130 MIL<br>- CONDIÇÕES COMERCIAIS<br>VALOR DE AVALIAÇÃO: 160 MIL<br>VALOR DE VENDA: 130 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTAS OU DE 3 A 12 MESES<br><br>SINAL A PARTIR: SINAL ZERO<br>ENTRADA ZERO<br>TIPOLOGIA - CASA<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 1.518,00<br><br>COORDENADOR<br>CAROLINE ALMEIDA - 86 99498-1856<br><br>DRIVE<br>https://drive.google.com/drive/folders/1n7f4DtGNfllKBlwY_uMngP3yGh3mYPmL?ref=nova<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 130 MIL
+- CONDIÇÕES COMERCIAIS
+VALOR DE AVALIAÇÃO: 160 MIL
+VALOR DE VENDA: 130 MIL
+
+PREVISÃO DE ENTREGA
+PRONTAS OU DE 3 A 12 MESES
+
+SINAL A PARTIR: SINAL ZERO
+ENTRADA ZERO
+TIPOLOGIA - CASA
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 1.518,00
+
+COORDENADOR
+CAROLINE ALMEIDA - 86 99498-1856
+
+DRIVE
+https://drive.google.com/drive/folders/1n7f4DtGNfllKBlwY_uMngP3yGh3mYPmL?ref=nova
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.4363416,-5.0257799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RECANTO DOS PINHEIROS - CONSTENG</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 125 MIL<br>- CONDIÇÕES COMERCIAIS<br>VALOR DE AVALIAÇÃO: 150 MIL<br>VALOR DE VENDA: 125 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTAS OU DE 3 A 12 MESES<br>POSSIBILIDADES PRONTA ENTREGA<br><br>SINAL A PARTIR: ZERO<br>ENTRADA ZERO<br><br>TIPOLOGIA - CASA<br><br>DRIVE<br>https://drive.google.com/drive/folders/1ZXd-Y5gIREbs3klzzmPozLCpB7Vu166B<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 125 MIL
+- CONDIÇÕES COMERCIAIS
+VALOR DE AVALIAÇÃO: 150 MIL
+VALOR DE VENDA: 125 MIL
+
+PREVISÃO DE ENTREGA
+PRONTAS OU DE 3 A 12 MESES
+POSSIBILIDADES PRONTA ENTREGA
+
+SINAL A PARTIR: ZERO
+ENTRADA ZERO
+
+TIPOLOGIA - CASA
+
+DRIVE
+https://drive.google.com/drive/folders/1ZXd-Y5gIREbs3klzzmPozLCpB7Vu166B
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.670693,-5.341101,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMINIO MANOEL AYRES - INSPIRA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 225 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 500,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.500,00<br><br>COORDENADOR<br>JANETE - 89 99984-8870<br><br>PREVISÃO DE ENTREGA<br>2027<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/15wT5Z2K1Bo8DGx4A2xt65KpHdqyDkhz7<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 225 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 500,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.500,00
+
+COORDENADOR
+JANETE - 89 99984-8870
+
+PREVISÃO DE ENTREGA
+2027
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/15wT5Z2K1Bo8DGx4A2xt65KpHdqyDkhz7
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7459352,-5.1333402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESIDENCIAL MIRANTE DOS ALTOS - MOREIRA E SOUSA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 120 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: ZERO(95% DAS CASAS ZERA ENTRADA CAIXA)<br>ENTRADA EM ATE 12X(MUITO RARO GERAR)<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 1.518,00<br><br>COORDENADOR<br>LEVI BORGES - 86 99828-4111<br><br>PREVISÃO DE ENTREGA<br>PRONTA ENTREGA<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/1DtXwLUCoakQg2MlxBKj5ktYV-gPZknIb<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 120 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: ZERO(95% DAS CASAS ZERA ENTRADA CAIXA)
+ENTRADA EM ATE 12X(MUITO RARO GERAR)
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 1.518,00
+
+COORDENADOR
+LEVI BORGES - 86 99828-4111
+
+PREVISÃO DE ENTREGA
+PRONTA ENTREGA
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/1DtXwLUCoakQg2MlxBKj5ktYV-gPZknIb
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.4855024,-5.0283439,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MOREIRA E SOUSA - DEMERVAL LOBÃO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 120 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: ZERO(95% DAS CASAS ZERA ENTRADA CAIXA)<br>ENTRADA EM ATE 12X(MUITO RARO GERAR)<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 1.518,00<br><br>COORDENADOR<br>LEVI BORGES - 86 99828-4111<br><br>PREVISÃO DE ENTREGA<br>PRONTA ENTREGA<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/17HJD3w2KYI1zkGyiSTODKzmBOEu2aE--<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 120 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: ZERO(95% DAS CASAS ZERA ENTRADA CAIXA)
+ENTRADA EM ATE 12X(MUITO RARO GERAR)
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 1.518,00
+
+COORDENADOR
+LEVI BORGES - 86 99828-4111
+
+PREVISÃO DE ENTREGA
+PRONTA ENTREGA
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/17HJD3w2KYI1zkGyiSTODKzmBOEu2aE--
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.6677873,-5.3645696,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CASAS NOVAS - VERSALHES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 223 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 3.000,00<br>ENTRADA EM ATE 12X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.200,00<br><br>COORDENADOR<br>ENG FELIPE CASTRO - 86 99964-6412<br><br>PREVISÃO DE ENTREGA<br>MEDIA DE 3 A 12 MESES(DE ACORDO COM O PARCELAMENTO DO CLIENTE)<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/1oatLfs3URdedEd-QhfVmvwl0mnl50B_H<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 223 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 3.000,00
+ENTRADA EM ATE 12X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.200,00
+
+COORDENADOR
+ENG FELIPE CASTRO - 86 99964-6412
+
+PREVISÃO DE ENTREGA
+MEDIA DE 3 A 12 MESES(DE ACORDO COM O PARCELAMENTO DO CLIENTE)
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/1oatLfs3URdedEd-QhfVmvwl0mnl50B_H
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7336622,-5.0403571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CASAS SOLTAS - TURQUESA ENGENHARIA </name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 195 MIL<br>LAUDO DE: 215 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 5.000,00<br>ENTRADA EM ATE 6X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>COORDENADOR<br>TURQUESA ENGENHARIA - 86 98845-1234<br><br>PREVISÃO DE ENTREGA<br>MEDIA DE 3 A 6 MESES(DE ACORDO COM O PARCELAMENTO DO CLIENTE)<br>OPCOES A PRONTA ENTREGA<br><br>DRIVE<br><br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>INFORMACOES ADICIONAIS:<br>📐 Terreno 6,00 x 24,00m<br>✅ Garagem 2 carros <br>✅ Sala de jantar / estar <br>✅ Cozinha com bancadas em mármore <br>✅ Área de serviço integrada <br>✅ WC com nincho em acrílico e bancadas em mármore <br>✅ Forro de gesso todo com pé solto <br>✅ Sanca decorativa na sala <br>✅ Porcelanato 75x75<br>✅ Iluminação em led <br>✅ Chuveirão externo <br><br>☑️ ITBI e TAXAS DE CARTÓRIO GRÁTIS <br><br>❎ TAXAS DO BANCO - por conta do CLIENTE <br><br>2 quartos sendo 1 suíte<br>nome: ]]></description>
+        <styleUrl>#icon-1603-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 195 MIL
+LAUDO DE: 215 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 5.000,00
+ENTRADA EM ATE 6X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.000,00
+
+COORDENADOR
+TURQUESA ENGENHARIA - 86 98845-1234
+
+PREVISÃO DE ENTREGA
+MEDIA DE 3 A 6 MESES(DE ACORDO COM O PARCELAMENTO DO CLIENTE)
+OPCOES A PRONTA ENTREGA
+
+DRIVE
+
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+
+INFORMACOES ADICIONAIS:
+📐 Terreno 6,00 x 24,00m
+✅ Garagem 2 carros 
+✅ Sala de jantar / estar 
+✅ Cozinha com bancadas em mármore 
+✅ Área de serviço integrada 
+✅ WC com nincho em acrílico e bancadas em mármore 
+✅ Forro de gesso todo com pé solto 
+✅ Sanca decorativa na sala 
+✅ Porcelanato 75x75
+✅ Iluminação em led 
+✅ Chuveirão externo 
+
+☑️ ITBI e TAXAS DE CARTÓRIO GRÁTIS 
+
+❎ TAXAS DO BANCO - por conta do CLIENTE 
+
+2 quartos sendo 1 suíte</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.844139,-5.142235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO JARDINS LESTE 2 - BETACON</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 295 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 8.000,00<br>ENTRADA EM ATE 46X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 5.000,00<br><br>COORDENADOR<br>STEFANIA PACHECO - 86 99933-6963<br><br>PREVISÃO DE ENTREGA<br>2028<br><br>DRIVE<br>https://drive.google.com/drive/folders/1ho_Hjn34ANwKmhgnZf3ysLHwLvv8FhcC<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 295 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 8.000,00
+ENTRADA EM ATE 46X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 5.000,00
+
+COORDENADOR
+STEFANIA PACHECO - 86 99933-6963
+
+PREVISÃO DE ENTREGA
+2028
+
+DRIVE
+https://drive.google.com/drive/folders/1ho_Hjn34ANwKmhgnZf3ysLHwLvv8FhcC
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.740574,-5.0492526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JARDINS RESIDENCE CLUB 3 - BETACON</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 250 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 15.000,00<br>ENTRADA EM ATE 15X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>COORDENADOR<br>STEFANIA PACHECO - 86 99933-6963<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1L-gY2tTJ8xr7ifyYiwrbjzlgX2Tf-0bi<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 250 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 15.000,00
+ENTRADA EM ATE 15X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 3.000,00
+
+COORDENADOR
+STEFANIA PACHECO - 86 99933-6963
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1L-gY2tTJ8xr7ifyYiwrbjzlgX2Tf-0bi
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7444463,-5.1112613,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO JARDINS DI ROMA - BETACON</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 398 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 20.000,00<br>ENTRADA EM ATE (VER TABELA)<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 15.000,00<br><br>COORDENADOR<br>STEFANIA PACHECO - 86 99933-6963<br><br>PREVISÃO DE ENTREGA<br>2026<br>OPCOES A PRONTA ENTREGA DA 1° ETAPA<br><br>DRIVE<br>https://drive.google.com/drive/folders/1QXoZ-E-VUU6qUjj7-hwQOIy3c-CvcJMd<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 398 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 20.000,00
+ENTRADA EM ATE (VER TABELA)
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 15.000,00
+
+COORDENADOR
+STEFANIA PACHECO - 86 99933-6963
+
+PREVISÃO DE ENTREGA
+2026
+OPCOES A PRONTA ENTREGA DA 1° ETAPA
+
+DRIVE
+https://drive.google.com/drive/folders/1QXoZ-E-VUU6qUjj7-hwQOIy3c-CvcJMd
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7811972,-5.020734,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILLAGE NATUREZA - CANOPUS</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 232 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 500,00<br>ENTRADA EM ATE 72 VEZES<br>ITBI E CARTORIO - CONSULTAR CONDIÇÃO DO MÊS<br><br>RENDA A PARTIR DE R$ 2.500,00<br><br>COORDENADOR <br>CASSIO ABREU - 98 98800-3696<br><br>PREVISAO DE ENTREGA<br>2027<br><br>TIPOLOGIA - APARTAMENTOS<br>DRIVE<br>https://drive.google.com/drive/folders/1969kxtki9VKiLD-ohQu_L2Mm3V4jZO5J<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 232 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 500,00
+ENTRADA EM ATE 72 VEZES
+ITBI E CARTORIO - CONSULTAR CONDIÇÃO DO MÊS
+
+RENDA A PARTIR DE R$ 2.500,00
+
+COORDENADOR 
+CASSIO ABREU - 98 98800-3696
+
+PREVISAO DE ENTREGA
+2027
+
+TIPOLOGIA - APARTAMENTOS
+DRIVE
+https://drive.google.com/drive/folders/1969kxtki9VKiLD-ohQu_L2Mm3V4jZO5J
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7299162,-5.0870034,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VIVENDAS DO ALVORADA RESIDENCE - SENDAS</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 299 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 30.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 7.000,00<br><br>COORDENADOR<br>GISELLE - 86 98113-5702<br><br>PREVISÃO DE ENTREGA<br>6 MESES<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/1ajTWfdZ0zcG70Qy5valRe1hMeuRcT1Ie<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 299 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 30.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 7.000,00
+
+COORDENADOR
+GISELLE - 86 98113-5702
+
+PREVISÃO DE ENTREGA
+6 MESES
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/1ajTWfdZ0zcG70Qy5valRe1hMeuRcT1Ie
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8311207,-5.1333454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESIDENCIAL RECANTO DAS FLORES - M3 CONSTRUTORA </name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 209 MIL<br>LAUDO MEDIA DE 225 ML<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 5.000,00<br>ENTRADA EM ATE 18X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>COORDENADOR<br>M3 CONSTRUTORA - 86 99478-6945<br><br>PREVISÃO DE ENTREGA<br>PRONTA ENTREGA E A PARTIR DE 3 MESES<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/18P44A9vOTXhNpd4ersXSrCfexZ37_INT<br><br>DISPONIBILIDADE<br>https://construtoram3ltda.my.canva.site/ <br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 209 MIL
+LAUDO MEDIA DE 225 ML
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 5.000,00
+ENTRADA EM ATE 18X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PELO CLIENTE
+
+RENDA A PARTIR DE R$ 3.000,00
+
+COORDENADOR
+M3 CONSTRUTORA - 86 99478-6945
+
+PREVISÃO DE ENTREGA
+PRONTA ENTREGA E A PARTIR DE 3 MESES
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/18P44A9vOTXhNpd4ersXSrCfexZ37_INT
+
+DISPONIBILIDADE
+https://construtoram3ltda.my.canva.site/ 
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.832035,-5.144622,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESIDENCIAL TARSILA DO AMARAL - GARANTIA CONSTRUTORA </name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 780 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 120 MIL<br>ENTRADA EM ATE 48X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 20.000,00<br><br>COORDENADOR<br>André Carvalho - 86 98113-3128<br><br>PREVISÃO DE ENTREGA<br>2027<br><br>DRIVE<br>https://drive.google.com/drive/folders/1j15GZaobZwD6COAXDTQ1jT2G3faanXU9<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>🏠 Com atenção aos detalhes e preocupação com o bem-estar o RESIDENCIAL TARSILA DO AMARAL, transcende a construção, tornando-se um verdadeiro lar de elegância e harmonia.<br><br>📍Localizado na zona leste de Teresina, Bairro Uruguai, próximo a UNINOVAFAPI https://maps.app.goo.gl/AZgFB37XUtvDfP8G6 <br><br>🏠 Condomínio fechado com 47 casas e dois tipos de plantas;<br>* TIPO 1 com 136m² (Vaga de garagem coberta mais área gourmet)<br>* TIPO 2 com 112,75m² <br><br>⚜️Plantas de 4 quartos sendo 4 suítes <br>⚜️Suíte master com varanda<br>⚜️CASA TIPO 1 com churrasqueira<br>⚜️Quadra de Beach Tennis<br>⚜️Piscinas<br>⚜️Salão de Festas<br>⚜️Academia (Equipada e decorada)<br>⚜️Playground<br><br>🏠 Casas com terreno de 143m² a 187m² <br><br>💰Consulte nossa tabela promocional.<br><br>Não perca a oportunidade de garantir seu novo lar no Tarsila do Amaral.<br><br>TOUR VIRTUAL : https://tour360.meupasseiovirtual.com/08198/217885/tourvirtual/index.html<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 780 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 120 MIL
+ENTRADA EM ATE 48X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PELO CLIENTE
+
+RENDA A PARTIR DE R$ 20.000,00
+
+COORDENADOR
+André Carvalho - 86 98113-3128
+
+PREVISÃO DE ENTREGA
+2027
+
+DRIVE
+https://drive.google.com/drive/folders/1j15GZaobZwD6COAXDTQ1jT2G3faanXU9
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+
+🏠 Com atenção aos detalhes e preocupação com o bem-estar o RESIDENCIAL TARSILA DO AMARAL, transcende a construção, tornando-se um verdadeiro lar de elegância e harmonia.
+
+📍Localizado na zona leste de Teresina, Bairro Uruguai, próximo a UNINOVAFAPI https://maps.app.goo.gl/AZgFB37XUtvDfP8G6 
+
+🏠 Condomínio fechado com 47 casas e dois tipos de plantas;
+* TIPO 1 com 136m² (Vaga de garagem coberta mais área gourmet)
+* TIPO 2 com 112,75m² 
+
+⚜️Plantas de 4 quartos sendo 4 suítes 
+⚜️Suíte master com varanda
+⚜️CASA TIPO 1 com churrasqueira
+⚜️Quadra de Beach Tennis
+⚜️Piscinas
+⚜️Salão de Festas
+⚜️Academia (Equipada e decorada)
+⚜️Playground
+
+🏠 Casas com terreno de 143m² a 187m² 
+
+💰Consulte nossa tabela promocional.
+
+Não perca a oportunidade de garantir seu novo lar no Tarsila do Amaral.
+
+TOUR VIRTUAL : https://tour360.meupasseiovirtual.com/08198/217885/tourvirtual/index.html</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7453166,-5.0623423,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO NORTH MIX - TROPICAL CONSTRUTORA </name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 430 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 90 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 15.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/folders/1X88Wk2k3IYLA4lD_XnurNsyE7BMl7rxz<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 430 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 90 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 15.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/folders/1X88Wk2k3IYLA4lD_XnurNsyE7BMl7rxz
+
+TABELAS ATUALIZADAS TROPICAL
+https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8127634,-5.0617557,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>DECK CONDOMÍNIO - TROPICAL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 1.100.000,00<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 70 MIL<br>ENTRADA EM ATE 23X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 25.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1sPNzi6mo4QkzDl3XoBWi1jXSnzbr7ysq<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://drive.google.com/drive/folders/18GFZDLZql4FGkX484mb9PApXOL4G-lsU<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 1.100.000,00
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 70 MIL
+ENTRADA EM ATE 23X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 25.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1sPNzi6mo4QkzDl3XoBWi1jXSnzbr7ysq
+
+TABELAS ATUALIZADAS TROPICAL
+https://drive.google.com/drive/folders/18GFZDLZql4FGkX484mb9PApXOL4G-lsU
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7814723,-5.0866874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO PARQUE DAS FLORES - TROPICAL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 310 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 60 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 7.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/folders/19KmAIKKA6OqtwVWurpHn3IcfxFskiohd<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 310 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 60 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 7.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/folders/19KmAIKKA6OqtwVWurpHn3IcfxFskiohd
+
+TABELAS ATUALIZADAS TROPICAL
+https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.742498,-5.0701415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PIATÃ RESIDENCE - TROPICAL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 410 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 90 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 12.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/folders/1wt-nyOX-yBffLMwClkcJpUIGA_8zWw62<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9lODY5YmM2N2NlNDY3NDk1L0V2dHd3RWJzWVRaSXU5Q2RGTGY0c3ZjQkNNWTd3VWVza3lQTkhOeW42c0dVUlE%5FZT1LdTk1ejk&id=E869BC67CE467495%21s46c070fb61ec4836bbd09d14b7f8b2f7&cid=E869BC67CE467495<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value><![CDATA[UNIDADES A PARTIR DE: 410 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 90 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 12.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/folders/1wt-nyOX-yBffLMwClkcJpUIGA_8zWw62
+
+TABELAS ATUALIZADAS TROPICAL
+https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9lODY5YmM2N2NlNDY3NDk1L0V2dHd3RWJzWVRaSXU5Q2RGTGY0c3ZjQkNNWTd3VWVza3lQTkhOeW42c0dVUlE%5FZT1LdTk1ejk&id=E869BC67CE467495%21s46c070fb61ec4836bbd09d14b7f8b2f7&cid=E869BC67CE467495
+
+TABELA: CONSULTAR TABELA ATUALIZADA]]></value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7845843,-5.0851195,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESERVA TROPICAL CONDOMÍNIO CLUBE TROPICAL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 330 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 70 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 8.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/folders/1ro642KwUWqu2b8WdNbmziSVGS0emJubD<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 330 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 70 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 8.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/folders/1ro642KwUWqu2b8WdNbmziSVGS0emJubD
+
+TABELAS ATUALIZADAS TROPICAL
+https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7426491,-5.0726706,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA DIAMANTINA - TROPICAL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 750 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 150 MIL<br>ENTRADA EM ATE 10X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 25.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/folders/1biziUcMZ4dkVOvVN1ulskLpN7t-8wewo<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://drive.google.com/drive/folders/18GFZDLZql4FGkX484mb9PApXOL4G-lsU<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 750 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 150 MIL
+ENTRADA EM ATE 10X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 25.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/folders/1biziUcMZ4dkVOvVN1ulskLpN7t-8wewo
+
+TABELAS ATUALIZADAS TROPICAL
+https://drive.google.com/drive/folders/18GFZDLZql4FGkX484mb9PApXOL4G-lsU
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7754195,-5.0272909,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA PARATI - TROPICAL</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 560 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 120 MIL<br>ENTRADA EM ATE 10X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 10.000,00<br><br>COORDENADOR<br>CONSTRUTORA TROPICAL - 86 98894-4802<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/folders/1m0SyQtXGNWAmVL_hHGm-MTQDMhad56rj<br><br>TABELAS ATUALIZADAS TROPICAL<br>https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 560 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 120 MIL
+ENTRADA EM ATE 10X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 10.000,00
+
+COORDENADOR
+CONSTRUTORA TROPICAL - 86 98894-4802
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/folders/1m0SyQtXGNWAmVL_hHGm-MTQDMhad56rj
+
+TABELAS ATUALIZADAS TROPICAL
+https://drive.google.com/drive/folders/1W_U9-ntJrzMDmmg55sYqVAsGbnAX1v_m
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7653198,-5.0265529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BOSQUE DOS IPÊS - BOA VISTA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 919 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 90 MIL<br>ENTRADA EM ATE 24X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 25 MIL<br><br>PREVISÃO DE ENTREGA<br>2026<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1IYOKHYMx3uG3SO-J98vldHR5_bpbu5ei<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 919 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 90 MIL
+ENTRADA EM ATE 24X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 25 MIL
+
+PREVISÃO DE ENTREGA
+2026
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1IYOKHYMx3uG3SO-J98vldHR5_bpbu5ei
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7727183,-5.0779474,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO BOSQUE SÃO CRISTÓVÃO - BOA VISTA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 850 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 85 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 25 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1Ac0gS8Ibs9Un7Lz5rkOI3GIHMORqbEm8<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 850 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 85 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 25 MIL
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1Ac0gS8Ibs9Un7Lz5rkOI3GIHMORqbEm8
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7721016,-5.0797394,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BRISA SUL RESIDENCE - BOA VISTA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 400 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 70 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 10 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1OAbMm8nlpgBHzLktwCV6s89c1F2ik0eu<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 400 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 70 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 10 MIL
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1OAbMm8nlpgBHzLktwCV6s89c1F2ik0eu
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7948826,-5.1290182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO CAJUÍNA RESIDENCE - BOA VISTA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 460 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 90 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 13 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/15dKyPruAzo_Zg0jLrXwXHrox3cce6KT2<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 460 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 90 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 13 MIL
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/15dKyPruAzo_Zg0jLrXwXHrox3cce6KT2
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7544697,-5.0758901,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CARNAÚBA PALACE - BOA VISTA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 700 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 70 MIL<br>ENTRADA EM ATE 6X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 18 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/1AThNOd1zKVshWDA7FtORG4DUPu3865Y-<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 700 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 70 MIL
+ENTRADA EM ATE 6X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 18 MIL
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/1AThNOd1zKVshWDA7FtORG4DUPu3865Y-
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7776939,-5.0897777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESIDENCIAL JOIA VILLE - GMEX</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 209.900,00<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 5 MIL<br>ENTRADA EM ATE 4X<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>COORDENADOR<br>GMEX CONSTRUTORA - 86 99999-5310<br><br>PREVISÃO DE ENTREGA<br>PRONTAS E TAMBEM DE 3 A 4 MESES<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/1-VgK3aMGs1cbNV4mTCsW2Tk0Yji1HBRU<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 209.900,00
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 5 MIL
+ENTRADA EM ATE 4X
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.000,00
+
+COORDENADOR
+GMEX CONSTRUTORA - 86 99999-5310
+
+PREVISÃO DE ENTREGA
+PRONTAS E TAMBEM DE 3 A 4 MESES
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/1-VgK3aMGs1cbNV4mTCsW2Tk0Yji1HBRU
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.83905,-5.151884,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESERVA DO NORTE 7 - RIVELLO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 269 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 3.000,00<br>ENTRADA EM ATE 60 VEZES<br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>TIPOLOGIA - CASAS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1roFNdvXqKDn824UtgO2KGh7YX1659OpD<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-558B2F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 269 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 3.000,00
+ENTRADA EM ATE 60 VEZES
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 3.000,00
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+TIPOLOGIA - CASAS
+
+DRIVE
+https://drive.google.com/drive/folders/1roFNdvXqKDn824UtgO2KGh7YX1659OpD
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8361467,-4.993367,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>JOIA 2 - RBC CONSTRUTORA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 199 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 5.000,00<br>ENTRADA EM ATE 36 VEZES(6 A 12 PRE CHAVES E EM ATE 24X POS CHAVE)<br>SEM RISCO(SO POS CHAVE EM NO MAX R$ 12.500,00)<br><br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 2.000,00<br><br>PREVISÃO DE ENTREGA<br>Pronta Entrega a 3 meses<br><br>TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO<br><br>DRIVE<br>https://drive.google.com/drive/u/1/folders/1Ucr-TXE2fBiDQSGGmN-jNURDDyQpPpTE<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1603-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 199 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 5.000,00
+ENTRADA EM ATE 36 VEZES(6 A 12 PRE CHAVES E EM ATE 24X POS CHAVE)
+SEM RISCO(SO POS CHAVE EM NO MAX R$ 12.500,00)
+
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 2.000,00
+
+PREVISÃO DE ENTREGA
+Pronta Entrega a 3 meses
+
+TIPOLOGIA - CASAS - AQUISIÇÃO E CONSTRUÇÃO
+
+DRIVE
+https://drive.google.com/drive/u/1/folders/1Ucr-TXE2fBiDQSGGmN-jNURDDyQpPpTE
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8358643,-5.1423273,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA PRIVILEGE - MACEDO FORTES</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 1.550.000,00<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 100.000,00<br>ENTRADA EM ATE 40 VEZES<br>TIPOLOGIA - CASAS<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 15.000,00<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/16oT6xCqXJaQiJObVK2Jw3uXRKS04zFOA<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1603-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 1.550.000,00
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 100.000,00
+ENTRADA EM ATE 40 VEZES
+TIPOLOGIA - CASAS
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 15.000,00
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/16oT6xCqXJaQiJObVK2Jw3uXRKS04zFOA
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.717451,-5.0622553,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA RUBI - MRV</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 240 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 5.000,00<br>ENTRADA EM ATE 60X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CONSULTAR CONDIÇÃO COMERCIAL<br><br>RENDA A PARTIR DE R$ 5.000,00<br><br>PREVISÃO DE ENTREGA<br>2028<br><br>DRIVE<br>https://drive.google.com/drive/folders/1d5Q0DP3WV7eRsohiSBOjH_FGt1qI-Fqa<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 240 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 5.000,00
+ENTRADA EM ATE 60X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CONSULTAR CONDIÇÃO COMERCIAL
+
+RENDA A PARTIR DE R$ 5.000,00
+
+PREVISÃO DE ENTREGA
+2028
+
+DRIVE
+https://drive.google.com/drive/folders/1d5Q0DP3WV7eRsohiSBOjH_FGt1qI-Fqa
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7461428,-5.0802389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RESERVA GREEN PARK - TRIUNFO</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: VER COM A BIANCA<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: A VERIFICAR<br>ENTRADA EM ATE 30X<br><br>PRONTO PRA MORAR<br><br>ITBI E CARTORIO - PAGO PELO CLIENTE<br><br>RENDA A PARTIR DE R$ 3.000,00<br><br>TIPOLOGIA - APARTAMENTOS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1avTUr1evoowjNW0khXn6wAuqHTgs3QQF<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: VER COM A BIANCA
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: A VERIFICAR
+ENTRADA EM ATE 30X
+
+PRONTO PRA MORAR
+
+ITBI E CARTORIO - PAGO PELO CLIENTE
+
+RENDA A PARTIR DE R$ 3.000,00
+
+TIPOLOGIA - APARTAMENTOS
+
+DRIVE
+https://drive.google.com/drive/folders/1avTUr1evoowjNW0khXn6wAuqHTgs3QQF
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7299411,-5.0365692,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CONDOMÍNIO GIRASSOL RESIDENCE - BOA VISTA</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 350 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 75 MIL<br>ENTRADA EM ATE 1X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 8 MIL<br><br>PREVISÃO DE ENTREGA<br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/u/0/folders/13lvocNHQ4Ix2VIVR0qZT_MPhNldc522u<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 350 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 75 MIL
+ENTRADA EM ATE 1X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 8 MIL
+
+PREVISÃO DE ENTREGA
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/u/0/folders/13lvocNHQ4Ix2VIVR0qZT_MPhNldc522u
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7567623,-5.0685211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILLAGE PARQUE VILLE</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 219 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: R$ 100,00<br>ENTRADA EM ATE 72 VEZES<br>ITBI E CARTORIO - GRATIS<br><br>RENDA A PARTIR DE R$ 1.612,00<br><br>COORDENADOR <br>CASSIO ABREU - 98 98800-3696<br><br>PREVISAO DE ENTREGA<br>2028<br><br>TIPOLOGIA - APARTAMENTOS<br><br>DRIVE<br>https://drive.google.com/drive/folders/1ib9b1dk0BBUuFZZV7Wc45K4cgoXUezkf<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-F9A825-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 219 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: R$ 100,00
+ENTRADA EM ATE 72 VEZES
+ITBI E CARTORIO - GRATIS
+
+RENDA A PARTIR DE R$ 1.612,00
+
+COORDENADOR 
+CASSIO ABREU - 98 98800-3696
+
+PREVISAO DE ENTREGA
+2028
+
+TIPOLOGIA - APARTAMENTOS
+
+DRIVE
+https://drive.google.com/drive/folders/1ib9b1dk0BBUuFZZV7Wc45K4cgoXUezkf
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8448988,-4.9901058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>VILA ESPERANÇA - ESTRELA DA MANHÃ</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 275 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 5 MIL<br>ENTRADA EM ATE 72X<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 4.000,00<br><br>PREVISÃO DE ENTREGA<br>2028 E PRONTOS(VER TABELA)<br><br>DRIVE<br>https://drive.google.com/drive/folders/1kau5AXXsA1XpuxaOXmq9f7Crq9SAspS3<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 275 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 5 MIL
+ENTRADA EM ATE 72X
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 4.000,00
+
+PREVISÃO DE ENTREGA
+2028 E PRONTOS(VER TABELA)
+
+DRIVE
+https://drive.google.com/drive/folders/1kau5AXXsA1XpuxaOXmq9f7Crq9SAspS3
+
+TABELA: CONSULTAR TABELA ATUALIZADA</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.8178542,-5.058327,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Condomínio Noblesse - ANDRADE E JUNIOR</name>
+        <description><![CDATA[description: UNIDADES A PARTIR DE: 500 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: 9 MIL<br>PARCELAMENTO: A VER TABELA<br>TIPOLOGIA - APARTAMENTOS<br><br>ITBI E CARTORIO - CLIENTE<br><br>RENDA A PARTIR DE R$ 20.000,00<br><br>PREVISÃO DE ENTREGA<br>PRONTO E EM CONSTRUÇÃO<br> <br>DRIVE<br>https://drive.google.com/drive/folders/1umkTM9gb66lvSFJotQMz1w7z99A015-4<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br><br>nome: ]]></description>
+        <styleUrl>#icon-1546-097138-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 500 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: 9 MIL
+PARCELAMENTO: A VER TABELA
+TIPOLOGIA - APARTAMENTOS
+
+ITBI E CARTORIO - CLIENTE
+
+RENDA A PARTIR DE R$ 20.000,00
+
+PREVISÃO DE ENTREGA
+PRONTO E EM CONSTRUÇÃO
+ 
+DRIVE
+https://drive.google.com/drive/folders/1umkTM9gb66lvSFJotQMz1w7z99A015-4
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.7896526,-5.1038079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name/>
+        <description><![CDATA[description: <br>nome: ]]></description>
+        <ExtendedData>
+          <Data name="description">
+            <value/>
+          </Data>
+          <Data name="nome">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>LOTES</name>
+      <Placemark>
+        <name>Loteamento Boa Vizinhança - MÃE RAINHA</name>
+        <description><![CDATA[descrição: <br>name: Loteamento Boa Vizinhança - MÃE RAINHA<br>description: UNIDADES A PARTIR DE: 50 MIL<br>- CONDIÇÕES COMERCIAIS<br>SINAL A PARTIR: VER TABELA<br>PARCELAMENTO EM ATE 186X<br>TIPOLOGIA - LOTES<br><br>SEM ANALISE DE RENDA E SPC<br><br>PREVISÃO DE ENTREGA <br>PRONTO<br><br>DRIVE<br>https://drive.google.com/drive/u/2/folders/1hKMKA5hgcQBIiuEOB4AlutpJ2EU19fiM<br><br>TABELA: CONSULTAR TABELA ATUALIZADA<br>]]></description>
+        <styleUrl>#icon-1574-097138</styleUrl>
+        <ExtendedData>
+          <Data name="descrição">
+            <value/>
+          </Data>
+          <Data name="name">
+            <value>Loteamento Boa Vizinhança - MÃE RAINHA</value>
+          </Data>
+          <Data name="description">
+            <value>UNIDADES A PARTIR DE: 50 MIL
+- CONDIÇÕES COMERCIAIS
+SINAL A PARTIR: VER TABELA
+PARCELAMENTO EM ATE 186X
+TIPOLOGIA - LOTES
+
+SEM ANALISE DE RENDA E SPC
+
+PREVISÃO DE ENTREGA 
+PRONTO
+
+DRIVE
+https://drive.google.com/drive/u/2/folders/1hKMKA5hgcQBIiuEOB4AlutpJ2EU19fiM
+
+TABELA: CONSULTAR TABELA ATUALIZADA
+</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -42.803126,-5.011638,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>ZONAS DE TERESINA</name>
+      <Placemark>
+        <name>CENTRO - TERESINA</name>
+        <styleUrl>#poly-FF5252-2485-66-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -42.8029969,-5.0725834,0
+                -42.806074,-5.0679403,0
+                -42.8080984,-5.0689506,0
+                -42.8074761,-5.0702224,0
+                -42.8108856,-5.0720178,0
+                -42.8112053,-5.0723385,0
+                -42.8127717,-5.069218,0
+                -42.8175623,-5.0717929,0
+                -42.817691,-5.0715364,0
+                -42.821017,-5.073289,0
+                -42.8209388,-5.0761541,0
+                -42.8287923,-5.0800868,0
+                -42.8188547,-5.0923969,0
+                -42.8180928,-5.0935511,0
+                -42.815643,-5.0982342,0
+                -42.8147381,-5.1023188,0
+                -42.814585,-5.1123252,0
+                -42.8138339,-5.1120794,0
+                -42.8128147,-5.1120046,0
+                -42.8121066,-5.1119191,0
+                -42.8119132,-5.1120447,0
+                -42.8116235,-5.112376,0
+                -42.8116665,-5.1128034,0
+                -42.8104863,-5.1125149,0
+                -42.8097567,-5.1122477,0
+                -42.8081391,-5.1115115,0
+                -42.8045152,-5.1098776,0
+                -42.8051911,-5.1087395,0
+                -42.8055773,-5.1070297,0
+                -42.8056326,-5.1045605,0
+                -42.8020062,-5.1029789,0
+                -42.8020813,-5.102701,0
+                -42.8015556,-5.1016645,0
+                -42.8016935,-5.1015564,0
+                -42.8014038,-5.1011076,0
+                -42.8013502,-5.1005305,0
+                -42.8002773,-5.098607,0
+                -42.799934,-5.0983505,0
+                -42.7999769,-5.0979658,0
+                -42.7978311,-5.0993123,0
+                -42.7963657,-5.0992148,0
+                -42.7956362,-5.0993003,0
+                -42.795207,-5.0994606,0
+                -42.7949495,-5.099653,0
+                -42.7942948,-5.0970161,0
+                -42.7940909,-5.0971229,0
+                -42.7939183,-5.0965745,0
+                -42.7942509,-5.0956341,0
+                -42.7809252,-5.0945162,0
+                -42.7818264,-5.0921224,0
+                -42.7823843,-5.0910537,0
+                -42.7829422,-5.0901988,0
+                -42.784058,-5.0895149,0
+                -42.7852596,-5.0894721,0
+                -42.7881778,-5.0901133,0
+                -42.7914394,-5.0889164,0
+                -42.792875,-5.0873627,0
+                -42.7953426,-5.0835583,0
+                -42.7958147,-5.083259,0
+                -42.7962867,-5.0827674,0
+                -42.7980402,-5.0800429,0
+                -42.8029969,-5.0725834,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>ZONA SUL - TERESINA</name>
+        <styleUrl>#poly-0288D1-1200-77-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -42.8015556,-5.1016645,0
+                -42.8020813,-5.102701,0
+                -42.8020062,-5.1029789,0
+                -42.8056326,-5.1045605,0
+                -42.8055773,-5.1070297,0
+                -42.8051911,-5.1087395,0
+                -42.8045152,-5.1098776,0
+                -42.8075222,-5.1111909,0
+                -42.8097567,-5.1122477,0
+                -42.8116665,-5.1128034,0
+                -42.8116235,-5.112376,0
+                -42.8119132,-5.1120447,0
+                -42.8121066,-5.1119191,0
+                -42.8138339,-5.1120794,0
+                -42.814585,-5.1123252,0
+                -42.814682,-5.1191993,0
+                -42.8146017,-5.1228073,0
+                -42.8128907,-5.1299203,0
+                -42.8118821,-5.134387,0
+                -42.8104444,-5.1386827,0
+                -42.8028697,-5.1496888,0
+                -42.8014857,-5.1536529,0
+                -42.802167,-5.1581994,0
+                -42.7982161,-5.1823558,0
+                -42.7974423,-5.1920397,0
+                -42.7986004,-5.1976977,0
+                -42.7701474,-5.1969454,0
+                -42.7505346,-5.2403203,0
+                -42.7251073,-5.2326036,0
+                -42.7179733,-5.2215658,0
+                -42.7211011,-5.2084398,0
+                -42.7111635,-5.1927308,0
+                -42.7158935,-5.1906036,0
+                -42.7049546,-5.1686827,0
+                -42.7105805,-5.164456,0
+                -42.7138258,-5.1569278,0
+                -42.7125299,-5.1504283,0
+                -42.7146283,-5.1419641,0
+                -42.7197972,-5.1381595,0
+                -42.7233256,-5.1332651,0
+                -42.7286945,-5.1276549,0
+                -42.7288038,-5.1158735,0
+                -42.7331498,-5.1149412,0
+                -42.7368677,-5.1192623,0
+                -42.7447348,-5.1243293,0
+                -42.7515866,-5.1301967,0
+                -42.7635097,-5.1265477,0
+                -42.7709302,-5.1228424,0
+                -42.7779019,-5.1168008,0
+                -42.7796711,-5.1129251,0
+                -42.7795257,-5.1082516,0
+                -42.779453,-5.1030937,0
+                -42.7809252,-5.0945162,0
+                -42.7942509,-5.0956341,0
+                -42.7939183,-5.0965745,0
+                -42.7940909,-5.0971229,0
+                -42.7942948,-5.0970161,0
+                -42.7949495,-5.099653,0
+                -42.795207,-5.0994606,0
+                -42.7956362,-5.0993003,0
+                -42.7963657,-5.0992148,0
+                -42.7978311,-5.0993123,0
+                -42.7999769,-5.0979658,0
+                -42.799934,-5.0983505,0
+                -42.8002773,-5.098607,0
+                -42.8013502,-5.1005305,0
+                -42.8014038,-5.1011076,0
+                -42.8016935,-5.1015564,0
+                -42.8015556,-5.1016645,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>ZONA SUDESTE - TERESINA</name>
+        <styleUrl>#poly-F57C00-1200-77-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -42.7809252,-5.0946017,0
+                -42.779453,-5.1031792,0
+                -42.7796711,-5.1130106,0
+                -42.7779019,-5.1168863,0
+                -42.7744174,-5.1204451,0
+                -42.7709302,-5.1229279,0
+                -42.7635097,-5.1266332,0
+                -42.7515866,-5.1302822,0
+                -42.7447348,-5.1244148,0
+                -42.7368677,-5.1193478,0
+                -42.7331498,-5.1150267,0
+                -42.7288038,-5.115959,0
+                -42.7286945,-5.1277404,0
+                -42.7233256,-5.1333506,0
+                -42.7197972,-5.138245,0
+                -42.6346601,-5.1205131,0
+                -42.6479273,-5.0957134,0
+                -42.6967764,-5.1049316,0
+                -42.7095035,-5.0618129,0
+                -42.7107924,-5.0615763,0
+                -42.715943,-5.0622702,0
+                -42.7212005,-5.0631301,0
+                -42.7230353,-5.0634959,0
+                -42.7277079,-5.0652391,0
+                -42.7291215,-5.0657473,0
+                -42.7331113,-5.0690579,0
+                -42.7334962,-5.0703166,0
+                -42.7345292,-5.0728142,0
+                -42.7374965,-5.0753727,0
+                -42.7407703,-5.0768563,0
+                -42.74367,-5.0780067,0
+                -42.7459933,-5.0777427,0
+                -42.7497388,-5.0784117,0
+                -42.749977,-5.08287,0
+                -42.7531184,-5.0837759,0
+                -42.7549379,-5.0846044,0
+                -42.7577016,-5.087378,0
+                -42.760358,-5.0903224,0
+                -42.7622805,-5.0936893,0
+                -42.7641768,-5.0938202,0
+                -42.7693965,-5.0942423,0
+                -42.7809252,-5.0946017,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>ZONA NORTE - TERESINA</name>
+        <styleUrl>#poly-FFD600-1200-77-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -42.8405091,-5.049746,0
+                -42.8393933,-5.0605186,0
+                -42.8349784,-5.0707229,0
+                -42.8290182,-5.0799012,0
+                -42.8211647,-5.0759685,0
+                -42.8212428,-5.0731034,0
+                -42.8179169,-5.0713508,0
+                -42.8177882,-5.0716073,0
+                -42.8129976,-5.0690324,0
+                -42.8114311,-5.0721529,0
+                -42.807702,-5.0700368,0
+                -42.8083243,-5.068765,0
+                -42.8062998,-5.0677547,0
+                -42.8083964,-5.0621968,0
+                -42.8077372,-5.0531124,0
+                -42.8050641,-5.0484526,0
+                -42.8025536,-5.0464221,0
+                -42.7982191,-5.0447549,0
+                -42.7922539,-5.0437716,0
+                -42.7868037,-5.0417624,0
+                -42.7819113,-5.0365469,0
+                -42.7812301,-5.0325925,0
+                -42.7820911,-5.0290763,0
+                -42.7847531,-5.0272327,0
+                -42.786685,-5.0273369,0
+                -42.7901617,-5.0197461,0
+                -42.7802806,-4.9940524,0
+                -42.7855125,-4.9943068,0
+                -42.7829786,-4.9810951,0
+                -42.8074606,-4.9761992,0
+                -42.8075138,-4.9535709,0
+                -42.8396409,-4.9542277,0
+                -42.8574574,-4.9553325,0
+                -42.8613877,-4.9614429,0
+                -42.8620654,-4.9698852,0
+                -42.8615414,-4.9718288,0
+                -42.8521498,-5.0019201,0
+                -42.849281,-5.0060179,0
+                -42.8392733,-5.034038,0
+                -42.8409212,-5.0445425,0
+                -42.8405091,-5.049746,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>ZONA LESTE - TERESINA</name>
+        <styleUrl>#poly-097138-1200-77-nodesc</styleUrl>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <tessellate>1</tessellate>
+                <coordinates>
+                  -42.7945387,-5.0853415,0
+                  -42.8063083,-5.0678928,0
+                  -42.8009957,-5.0756534,0
+                  -42.7945387,-5.0853415,0
+                </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <tessellate>1</tessellate>
+                <coordinates>
+                  -42.8088259,-5.0603224,0
+                  -42.8063083,-5.0678928,0
+                  -42.7955772,-5.0835108,0
+                  -42.7931095,-5.0873153,0
+                  -42.7916738,-5.088869,0
+                  -42.7884122,-5.0900659,0
+                  -42.785494,-5.0894247,0
+                  -42.7842925,-5.0894675,0
+                  -42.7831766,-5.0901514,0
+                  -42.7820608,-5.092075,0
+                  -42.7811595,-5.0944688,0
+                  -42.7625148,-5.0935564,0
+                  -42.7605924,-5.0901895,0
+                  -42.7551722,-5.0844715,0
+                  -42.7533528,-5.083643,0
+                  -42.7502114,-5.0827371,0
+                  -42.7499732,-5.0782788,0
+                  -42.7462276,-5.0776098,0
+                  -42.7439043,-5.0778738,0
+                  -42.7406459,-5.0765996,0
+                  -42.7377308,-5.0752398,0
+                  -42.7347635,-5.0726813,0
+                  -42.7333457,-5.068925,0
+                  -42.7293559,-5.0656144,0
+                  -42.7232697,-5.063363,0
+                  -42.7214349,-5.0629972,0
+                  -42.7161774,-5.0621373,0
+                  -42.7097379,-5.06168,0
+                  -42.7198125,-5.0237102,0
+                  -42.7304215,-5.0073582,0
+                  -42.7426094,-5.0042801,0
+                  -42.7467294,-5.0003469,0
+                  -42.7508279,-4.994639,0
+                  -42.7569004,-4.9947461,0
+                  -42.7602908,-4.9994062,0
+                  -42.780289,-4.9941906,0
+                  -42.785058,-5.0057549,0
+                  -42.7901703,-5.0198843,0
+                  -42.7866935,-5.0274751,0
+                  -42.7847617,-5.0273709,0
+                  -42.7820997,-5.0292145,0
+                  -42.7812385,-5.0327307,0
+                  -42.7819198,-5.0366851,0
+                  -42.7868122,-5.0419006,0
+                  -42.7922624,-5.0439098,0
+                  -42.7982276,-5.044893,0
+                  -42.8025621,-5.0465602,0
+                  -42.8050726,-5.0485907,0
+                  -42.8062099,-5.0506213,0
+                  -42.8077457,-5.0532505,0
+                  -42.8088259,-5.0603224,0
+                </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -258,16 +258,16 @@ export default function LeadDetail() {
       {/* Progress */}
       {lead.etapa !== 'perdido' && (
         <div className="card" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '30px', padding: '20px', overflowX: 'auto', gap: '10px' }}>
-          {ETAPAS.map((etp, idx) => {
-            const currentIdx = ETAPAS.indexOf(lead.etapa);
+          {etapas.map((etp, idx) => {
+            const currentIdx = etapas.findIndex(e => e.id === lead.etapa);
             const isCompleted = idx <= currentIdx;
             return (
-              <div key={etp} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: isCompleted ? 1 : 0.35, minWidth: '100px', cursor: 'pointer' }} onClick={() => handleEtapaChange(etp)}>
-                <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCompleted ? '#c49653' : 'rgba(255,255,255,0.1)', color: isCompleted ? '#061912' : '#fff', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px', boxShadow: isCompleted ? '0 0 15px rgba(196, 150, 83,0.4)' : 'none' }}>
+              <div key={etp.id} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: isCompleted ? 1 : 0.35, minWidth: '100px', cursor: 'pointer' }} onClick={() => handleEtapaChange(etp.id)}>
+                <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCompleted ? etp.cor : 'rgba(255,255,255,0.1)', color: isCompleted ? '#061912' : '#fff', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px', boxShadow: isCompleted ? `0 0 15px ${etp.cor}66` : 'none' }}>
                   {isCompleted ? <FiCheck size={18} /> : idx + 1}
                 </div>
                 <span style={{ fontSize: '0.85em', textAlign: 'center', fontWeight: isCompleted ? 700 : 400, color: isCompleted ? '#FFFFFF' : 'var(--color-text-secondary)' }}>
-                  {getEtapaLabel(etp)}
+                  {etp.nome}
                 </span>
               </div>
             );
