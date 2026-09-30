@@ -353,7 +353,7 @@ export default function LeadDetail() {
                       </div>
                       <p style={{ margin: 0, color: 'var(--color-text)' }}>
                         {item.tipo === 'mudanca_etapa' ? (
-                          <span>Mudou etapa de <strong>{getEtapaLabel(item.etapa_anterior)}</strong> para <strong>{getEtapaLabel(item.etapa_nova)}</strong></span>
+                          <span>Mudou etapa de <strong>{getEtapaNome(item.etapa_anterior)}</strong> para <strong>{getEtapaNome(item.etapa_nova)}</strong></span>
                         ) : (
                           item.descricao
                         )}
